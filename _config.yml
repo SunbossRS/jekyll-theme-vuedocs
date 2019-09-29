@@ -1,9 +1,23 @@
+## Site title
+title: 'Vuekyll'
+
+## Site description
+describe: ''
+
+## Site colour
+colour:
+
+## Site author settings
 author:
   name: Vue
   url: https://vue.
   avatar: /img/avatar.png
   description: 
 
+## The base of the site
 baseurl: ''
+
+## Language (two options 'cn' and 'en') (default set 'en')
+lang: ''
 
 
