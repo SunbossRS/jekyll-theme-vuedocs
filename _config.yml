@@ -24,5 +24,5 @@ lang: ''
 
 ## Manager panel
 manager:
-  use: true
+  use: // true or false
   edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' // Your open-source platform repo url + /edit/master/
