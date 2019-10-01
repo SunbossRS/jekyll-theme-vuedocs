@@ -2,22 +2,27 @@
 title: 'Vuekyll'
 
 ## Site description
-describe: ''
+description: 'A Vue theme of Jekyll blog.'
 
-## Site colour
+## Site colour (default set 'green')
+// Options: green, blue, red, yellow-orange, purple
 colour:
 
 ## Site author settings
 author:
-  name: Vue
-  url: https://vue.
-  avatar: /img/avatar.png
-  description: 
+  name: 'Vue'
+  url: 'https://sunbossrs.github.io/jekyll-theme-vuekyll/'
+  avatar: '/img/avatar.png'
+  description: ''
 
 ## The base of the site
 baseurl: ''
 
-## Language (two options 'cn' and 'en') (default set 'en')
+## Language (default set 'en')
+// Options: cn, en
 lang: ''
 
-
+## Manager panel
+manager:
+  use: true
+  edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' // Your open-source platform repo url + /edit/master/
