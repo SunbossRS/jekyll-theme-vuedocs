@@ -1,125 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>site.title</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="sidebar" content="auto">
+    <title>@vuepress/theme-blog | @vuepress/theme-blog</title>
+    <meta name="description" content="A blog theme of VuePress">
     
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://unpkg.com/http-vue-loader"></script>
-    <link rel="stylesheet" href="//vuepress-theme-blog.ulivz.com/assets/css/0.styles.5e739af7.css">
-      <!--link rel="preload" href="//vuepress-theme-blog.ulivz.com/assets/js/app.c2ff6b9c.js" as="script">
-      <link rel="preload" href="//vuepress-theme-blog.ulivz.com/assets/js/2.6ad828a4.js" as="script">
-      <link rel="preload" href="//vuepress-theme-blog.ulivz.com/assets/js/4.7b55a7d0.js" as="script">
-      <link rel="prefetch" href="//vuepress-theme-blog.ulivz.com/assets/js/3.196404a2.js">
-      <link rel="prefetch" href="//vuepress-theme-blog.ulivz.com/assets/js/5.7842b0da.js">
-      <link rel="prefetch" href="//vuepress-theme-blog.ulivz.com/assets/js/6.be294db9.js"-->
+    
+    <link rel="preload" href="//vuepress-theme-blog.ulivz.com/assets/css/0.styles.5e739af7.css" as="style"><link rel="preload" href="/assets/js/app.c2ff6b9c.js" as="script"><link rel="preload" href="/assets/js/2.6ad828a4.js" as="script"><link rel="preload" href="/assets/js/4.7b55a7d0.js" as="script"><link rel="prefetch" href="/assets/js/3.196404a2.js"><link rel="prefetch" href="/assets/js/5.7842b0da.js"><link rel="prefetch" href="/assets/js/6.be294db9.js">
     <link rel="stylesheet" href="//vuepress-theme-blog.ulivz.com/assets/css/0.styles.5e739af7.css">
   </head>
   <body>
-  <script type="text/javascript">
-    new Vue({
-      el: '#app',
-      components: {
-        'Header': httpVueLoader('./vue/Header.vue');
-        'MobileHeader': httpVueLoader('./vue/MobileHeadrt.vue');
-        'Pagination': httpVueLoader('./vue/Pagination.vue');
-        'Sticker': httpVueLoader('./vue/Sticker.vue');
-        'Toc': httpVueLoader('./vue/Toc.vue');
-      },
-    })
-  </script>
-    <div id="app" data-server-rendered="true">
-      <div class="theme-container">
-        <header class="navbar">
-        <script type="text/javascript">
-        new Vue({
-          components: {
-           'Header': httpVueLoader('./vue/Header.vue'),
-           'MobileHeader': httpVueLoader('./vue/MobileHeader.vue')
-          },
-        })
-        </script>
-        <div class="sidebar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
-        </div>
-        <a href="./" class="home-link router-link-exact-active router-link-active"><!---->
-          <span class="site-name">@vuepress/theme-blog</span>
-        </a>
-        <div class="links">
-          <div class="search-box">
-            <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!---->
-          </div><!---->
-       </div>
-       </header>
-       <div class="sidebar-mask"></div>
-       <aside class="sidebar"><!---->
-       <ul class="sidebar-links">
-         <li>
-           <section class="sidebar-group depth-0">
-             <p class="sidebar-heading open">
-               <span>@vuepress/theme-blog</span> <!---->
-             </p>
-             <ul class="sidebar-links sidebar-group-items">
-               <li>
-                 <a href="/#install" class="sidebar-link">Install</a>
-                 <ul class="sidebar-sub-headers"></ul>
-               </li>
-               <li>
-                 <a href="/#usage" class="sidebar-link">Usage</a>
-                 <ul class="sidebar-sub-headers"></ul>
-               </li>
-               <li>
-                 <a href="/#options" class="sidebar-link">Options</a>
-                 <ul class="sidebar-sub-headers">
-                   <li class="sidebar-sub-header">
-                     <a href="/#nav" class="sidebar-link">nav</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#footer" class="sidebar-link">footer</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#modifyblogpluginoptions" class="sidebar-link">modifyBlogPluginOptions</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#summary" class="sidebar-link">summary</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#summarylength" class="sidebar-link">summaryLength</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#pwa" class="sidebar-link">pwa</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#paginationcomponent" class="sidebar-link">paginationComponent</a>
-                   </li>
-                 </ul>
-               </li>
-               <li>
-                 <a href="/#front-matter" class="sidebar-link">Front Matter</a>
-                 <ul class="sidebar-sub-headers">
-                   <li class="sidebar-sub-header">
-                     <a href="/#tag-tags" class="sidebar-link">tag/tags</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#date" class="sidebar-link">date</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#author" class="sidebar-link">author</a>
-                   </li>
-                   <li class="sidebar-sub-header">
-                     <a href="/#location" class="sidebar-link">location</a>
-                   </li>
-                 </ul>
-               </li>
-             </ul>
-           </section>
-         </li>
-       </ul>
-     </aside>
- <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress-theme-blog"><a href="#vuepress-theme-blog" aria-hidden="true" class="header-anchor">#</a> @vuepress/theme-blog</h1> <blockquote><p>Default blog theme for VuePress</p></blockquote> <h2 id="install"><a href="#install" aria-hidden="true" class="header-anchor">#</a> Install</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @vuepress/theme-blog -D
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">@vuepress/theme-blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>@vuepress/theme-blog</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/#install" class="sidebar-link">Install</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/#usage" class="sidebar-link">Usage</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/#options" class="sidebar-link">Options</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#nav" class="sidebar-link">nav</a></li><li class="sidebar-sub-header"><a href="/#footer" class="sidebar-link">footer</a></li><li class="sidebar-sub-header"><a href="/#modifyblogpluginoptions" class="sidebar-link">modifyBlogPluginOptions</a></li><li class="sidebar-sub-header"><a href="/#summary" class="sidebar-link">summary</a></li><li class="sidebar-sub-header"><a href="/#summarylength" class="sidebar-link">summaryLength</a></li><li class="sidebar-sub-header"><a href="/#pwa" class="sidebar-link">pwa</a></li><li class="sidebar-sub-header"><a href="/#paginationcomponent" class="sidebar-link">paginationComponent</a></li></ul></li><li><a href="/#front-matter" class="sidebar-link">Front Matter</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#tag-tags" class="sidebar-link">tag/tags</a></li><li class="sidebar-sub-header"><a href="/#date" class="sidebar-link">date</a></li><li class="sidebar-sub-header"><a href="/#author" class="sidebar-link">author</a></li><li class="sidebar-sub-header"><a href="/#location" class="sidebar-link">location</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress-theme-blog"><a href="#vuepress-theme-blog" aria-hidden="true" class="header-anchor">#</a> @vuepress/theme-blog</h1> <blockquote><p>Default blog theme for VuePress</p></blockquote> <h2 id="install"><a href="#install" aria-hidden="true" class="header-anchor">#</a> Install</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @vuepress/theme-blog -D
 <span class="token comment"># OR npm install @vuepress/theme-blog -D</span>
 </code></pre></div><h2 id="usage"><a href="#usage" aria-hidden="true" class="header-anchor">#</a> Usage</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
@@ -237,7 +130,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
-</code> </pre> </div> <p> <strong>Also see:</strong> </p> <ul> <li> <a href="https://vuepress-plugin-blog.ulivz.com/#document-classifier" target="_blank" rel="noopener noreferrer">Document Classifier<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="summary"><a href="#summary" aria-hidden="true" class="header-anchor">#</a> summary</h3> <ul><li>Type: <code>boolean</code></li> <li>Default: <code>true</code></li></ul> <p>Whether to extract summary from source markdowns.</p> <h3 id="summarylength"><a href="#summarylength" aria-hidden="true" class="header-anchor">#</a> summaryLength</h3> <ul><li>Type: <code>number</code></li> <li>Default: <code>200</code></li></ul> <p>Set the length of summary.</p> <h3 id="pwa"><a href="#pwa" aria-hidden="true" class="header-anchor">#</a> pwa</h3> <ul><li>Type: <code>boolean</code></li> <li>Default: <code>false</code></li></ul> <p>Whether to enable PWA support. this option is powered by the <a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-pwa.html" target="_blank" rel="noopener noreferrer">official
+</code></pre></div><p><strong>Also see:</strong></p> <ul><li><a href="https://vuepress-plugin-blog.ulivz.com/#document-classifier" target="_blank" rel="noopener noreferrer">Document Classifier<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="summary"><a href="#summary" aria-hidden="true" class="header-anchor">#</a> summary</h3> <ul><li>Type: <code>boolean</code></li> <li>Default: <code>true</code></li></ul> <p>Whether to extract summary from source markdowns.</p> <h3 id="summarylength"><a href="#summarylength" aria-hidden="true" class="header-anchor">#</a> summaryLength</h3> <ul><li>Type: <code>number</code></li> <li>Default: <code>200</code></li></ul> <p>Set the length of summary.</p> <h3 id="pwa"><a href="#pwa" aria-hidden="true" class="header-anchor">#</a> pwa</h3> <ul><li>Type: <code>boolean</code></li> <li>Default: <code>false</code></li></ul> <p>Whether to enable PWA support. this option is powered by the <a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-pwa.html" target="_blank" rel="noopener noreferrer">official
 PWA plugin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>if you enable this option, the default options of the internal PWA
 plugin is as follows:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
   serviceWorker<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
@@ -262,6 +155,6 @@ tags:
 <span class="token title important">location: Hangzhou
 <span class="token punctuation">---</span></span>
 </code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="//vuepress-theme-blog.ulivz.com/assets/js/app.c2ff6b9c.js" defer></script><script src="//vuepress-theme-blog.ulivz.com/assets/js/2.6ad828a4.js" defer></script><script src="//vuepress-theme-blog.ulivz.com/assets/js/4.7b55a7d0.js" defer></script>
+    <script src="/assets/js/app.c2ff6b9c.js" defer></script><script src="/assets/js/2.6ad828a4.js" defer></script><script src="/assets/js/4.7b55a7d0.js" defer></script>
   </body>
 </html>
