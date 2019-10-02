@@ -26,3 +26,16 @@ lang: ''
 manager:
   use: # true or false
   edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' # Your open-source platform repo url + /edit/master/
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - LICENSE.txt
+  - README.md
