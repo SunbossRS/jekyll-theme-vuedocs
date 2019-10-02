@@ -7,7 +7,7 @@ gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
 
-"jekyll", "3.8.5"
-'jekyll-paginate', '~> 1.1'
-"bundler", "~> 1.12"
-"rake", "~> 10.0"
+gem "jekyll", "~>3.8.5"
+gem 'jekyll-paginate', '~> 1.1'
+gem "bundler", "~> 1.12"
+gem "rake", "~> 10.0"
