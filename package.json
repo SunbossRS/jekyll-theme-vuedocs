@@ -1,0 +1,18 @@
+{
+  "name": "jekyll-theme-vuekyll",
+  "author": "SunbossRS <3127723014@qq.com>",
+  "homepage": "http://sunbossrs.github.io/jekyll-theme-vuekyll/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sunbossrs/jekyll-theme-vuekyll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunbossrs/jekyll-theme-vuekyll/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "jekyll": "~>3.0.0"
+  }
+}
