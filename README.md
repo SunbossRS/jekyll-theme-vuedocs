@@ -1,4 +1,4 @@
-![Header](/img/readme img.png)
+![Header](/img/readme_img.png)
 ## jekyll-theme-vuekyll
 > Follow vue and start from jekyll! 
 
