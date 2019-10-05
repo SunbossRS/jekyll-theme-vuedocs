@@ -20,7 +20,7 @@ jekyll serve
 
 #### Contribution
 Thanks for everyone to support this theme!  
-Welcome to send pull requests.
+Welcome to send pull requests or issues.
 
 #### Todo
 - [ ] Better homepage & posts interface
