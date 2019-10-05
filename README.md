@@ -23,7 +23,9 @@ Thanks for everyone to support this theme!
 Welcome to send pull requests or issues.
 
 #### Todo
+> People who have dreams & goals are very happy.
 - [ ] Better homepage & posts interface
 - [ ] Administrator management module
+- [ ] Support Vssue comment system
 - [ ] Better definiation page
 
