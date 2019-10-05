@@ -3,12 +3,24 @@
 > Follow vue.js and start from jekyll now! 
 
 #### What is Vuekyll
-Vuekyll is a new theme with good interface.  
-This jekyll theme looks like the Vue.js official site. 
+Vuekyll is a new theme with a nice interface. The interface may looks like the Vue.js official site.  
+Of course, we also add some awesome features, we wish you can love this theme!
 
 #### How to use
-Just work on jekyll server. Use command `jekyll server` on your computer.  
-BTW Don't look at that word "vue", but in fact it is just a decoration. 
+First, clone this repository.
+```bash
+git clone https://github.com/sunbossrs/jekyll-theme-vuekyll
+```
+Then, run this repository on the Jekyll inside your computer.  
+Exec command:
+```
+jekyll serve
+```
+... Doesn't know how to run Jekyll on your computer? [Click here](https://jekyllrb.com/) for help.
+
+#### Contribution
+Thanks for everyone to support this theme!  
+Welcome to send pull requests.
 
 #### Todo
 - [ ] Better homepage & posts interface
