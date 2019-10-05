@@ -22,10 +22,15 @@ jekyll serve
 Thanks for everyone to support this theme!  
 Welcome to send pull requests or issues.
 
+#### Using things in this project
+- [Vue.js](https://vuejs.org/)
+- [VuePress](https://vuepress.js.org/) original theme styles
+- [Vssue](https://vssue.js.org/) comment system
+
 #### Todo
 > People who have dreams & goals are very happy.
 - [ ] Better homepage & posts interface
 - [ ] Administrator management module
-- [ ] Support Vssue comment system
+- [ ] Support [Vssue](https://vssue.js.org) comment system
 - [ ] Better definiation page
 
