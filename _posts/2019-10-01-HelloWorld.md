@@ -2,35 +2,33 @@
 layout: post
 title: 'Hello world!'
 tags: blog new
+arch: generation
 img: 
 ---
 
-### Write in front
-Welcome to the new Jekyll blog. And thank you for support the Jekyll!  
-Jekyll is using Markdown for the default docs language. Markdown is a language based on HTML, and the Markdown file can be convert to `.html` file.  
-Now you are using the Jekyll blog theme, Vuekyll. Vuekyll is made from the author, [SunbossRS](https://github.com/sunbossrs/). Thanks for support Vuekyll. Want to be a sponsor? Oh, contact with SunbossRS now.
+> Transform your plain text into static websites and blogs.
 
-### Easy to use
-Jekyll is a very easy blog generator. You can just learn Markdown language and little HTML language, then you can just build your own blog website!
+### Welcome
+This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.
 
-### Easy information FrontMatter
-There are all exist a FrontMatter in every posts. The FrontMatter can be like this:
+### So what is Jekyll, exactly?Permalink
+Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like [Markdown](https://daringfireball.net/projects/markdown/)) and our [Liquid](https://github.com/Shopify/liquid/wiki) renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+
+### Helpful HintsPermalink
+Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.
+
+### Video Test
+<iframe type="text/html" width="100%" height="385" src="http://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>
+
+### FrontMatter
+There are all exist a FrontMatter per posts. The FrontMatter can be like this:
 ```
 ---
 layout: post
 title: ''
 tags: ''
+arch: ''
 description: ''
 ---
 ```
 The deploy & settings of the FrontMatter will be different in the different themes.  
-The only few lines can help you to do the informations in every page.
-
-### Templates
-The templates are in the `_layouts` directory.  
-And the templates can include {{`content`}} or not. The {{`content`}} is the one grammar of Liquid language. It means a designation thing.  
-
-### Liquid support
-Liquid is a syntax of Jekyll. The special point of Liquid is can designation something.  
-For example, you create a item in `_config.yml`, then you can show the designation of that item by using {{`site.xx`}} .
-
