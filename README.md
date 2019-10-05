@@ -1,5 +1,5 @@
 ![Header](/img/readme_img.png)
-## jekyll-theme-vuekyll
+## <center>jekyll-theme-vuekyll</center>
 > Follow vue.js and start from jekyll now! 
 
 #### What is Vuekyll
