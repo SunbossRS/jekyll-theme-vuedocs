@@ -2,7 +2,6 @@
 layout: post
 title: 'Hello world!'
 tags: blog new
-arch: generate
 img: 
 ---
 
