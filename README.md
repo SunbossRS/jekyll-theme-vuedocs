@@ -26,6 +26,13 @@ Welcome to send pull requests or issues.
 - [Vue.js](https://vuejs.org/)
 - [VuePress](https://vuepress.js.org/) original theme styles
 - [Vssue](https://vssue.js.org/) comment system
+- [Prism.js](https://prismjs.com/)
+
+#### Features
+- Code highlights
+  - Support Markup, Html/Xml, Svg, MathML, Http, Php
+  - Support C, C++, C#, Git, Java, Json, Markdown, Nginx, PowerShell, Python, Stylus, Yaml
+- Google Chrome navigation bar theme colour
 
 #### Todo
 > People who have dreams & goals are very happy.
