@@ -27,8 +27,8 @@ There are all exist a FrontMatter per posts. The FrontMatter can be like this:
 layout: post
 title: ''
 tags: ''
-arch: ''
-description: ''
+img: ''
 ---
 ```
 The deploy & settings of the FrontMatter will be different in the different themes.  
+And in this theme there are just need to fill four infos! It is just easy.
