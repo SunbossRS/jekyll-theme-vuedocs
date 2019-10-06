@@ -5,6 +5,8 @@ tags: blog new
 img: 
 ---
 
+Hooray! When you can see this post, means you are just deployed the Jekyll site well!
+
 > Transform your plain text into static websites and blogs.
 
 ### Welcome
@@ -17,6 +19,7 @@ Jekyll is a simple, blog-aware, static site generator. It takes a template direc
 Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.
 
 ### Video Test
+The markdown can support some html elements. Here is an example.
 <iframe type="text/html" width="100%" height="385" src="http://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>
 
 ### FrontMatter
