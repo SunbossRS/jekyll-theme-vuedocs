@@ -41,3 +41,5 @@ Welcome to send pull requests or issues.
 - [ ] Support [Vssue](https://vssue.js.org) comment system
 - [ ] Better definiation page
 
+#### License
+This open source project has running under MIT license.
