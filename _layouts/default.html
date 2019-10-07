@@ -1,6 +1,13 @@
+---
+layout:
+---
+
 <!DOCTYPE HTML>
 <html>
-{% include head.html %}
+  {% include head.html %}
 <body>
-  {{ content }}
+  <div id="app" data-server-rendered="true">
+    <div class="theme-container">
+    {% include navbar.html %}
+    {{ content }}
 </body>
