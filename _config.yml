@@ -4,8 +4,8 @@ title: 'Vuekyll'
 ## Site description
 description: 'A Vue theme of Jekyll blog.'
 
-## Site colour (default set 'green')
-# Options: green, blue, red, yellow-orange, purple
+## Site colour (blank = 'green')
+##--Options: green, blue, red, yellow-orange, purple
 colour:
 
 ## Site author settings
@@ -18,13 +18,20 @@ author:
 ## The base of the site
 baseurl: ''
 
-## Language (default set 'en')
-# Options: cn, en
+## Language (blank = 'en')
+##--Options: cn, en
 lang: ''
+
+## Navigation bar list
+nav:
+  Home: '/'
+  Tags: '/tags'
+  About: '/about'
+  Friends: '/friends'
 
 ## Manager panel
 manager:
-  use: # true or false
+  use: '' # true / false
   edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' # Your open-source platform repo url + /edit/master/
 
 paginate: 5
@@ -34,16 +41,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
-
-exclude:
-  - Gemfile
-  - LICENSE.txt
-  - README.md
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
