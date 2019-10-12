@@ -4,22 +4,24 @@ title: 'Vuekyll'
 ## Site description
 description: 'A Vue theme of Jekyll blog.'
 
+## The url of this site
+url: 'https://sunbossrs.github.io/jekyll-theme-vuekyll'
+
 ## Site colour (blank = 'green')
-##--Options: green, blue, red, yellow-orange, purple
+##-- green, blue, red, yellow-orange, purple
 colour:
 
 ## Site author settings
 author:
   name: 'Vue'
-  url: 'https://sunbossrs.github.io/jekyll-theme-vuekyll/'
   avatar: '/img/avatar.png'
-  description: ''
+  description: 'I am a student.'
 
 ## The base of the site
 baseurl: ''
 
 ## Language (blank = 'en')
-##--Options: cn, en
+##-- cn, en
 lang: ''
 
 ## Navigation bar list
@@ -35,6 +37,7 @@ manager:
   edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' # Your open-source platform repo url + /edit/master/
 
 paginate: 5
+
 paginate_path: "/blog/page:num/"
 
 plugins:
