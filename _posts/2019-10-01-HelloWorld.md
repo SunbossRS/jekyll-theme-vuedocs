@@ -6,7 +6,7 @@ img:
 ---
 
 Hooray! When you can see this post, means you are just deployed the Jekyll site well!
-
+Welcome to use Jekyll!
 > Transform your plain text into static websites and blogs.
 
 ### Welcome
