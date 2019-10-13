@@ -1,31 +1,10 @@
 <!--
 <div class="sidebar-mask"></div>
+-->
 <aside class="sidebar" id="sidebarmask">
-  <!---->
-  <ul class="sidebar-links">
-    <li>
-      <section class="sidebar-group depth-0">
-        <img src="./img/readme_img.png" width="19%">
-        <p class="sidebar-heading open">
-          <span>Vuekyll</span>
-          <!---->
-        </p>
-        <ul class="sidebar-links sidebar-group-items">
-          <li>
-            <a href="{{ site.baseurl }}" class="sidebar-link">Home</a>
-          </li>
-          <li>
-            <a href="/#usage" class="sidebar-link">Usage</a>
-          </li>
-          <li>
-            <a href="/#options" class="sidebar-link">Options</a>
-          </li>
-          <li>
-            <a href="/#front-matter" class="sidebar-link">Front Matter</a>
-          </li>
-        </ul>
-      </section>
-    </li>
-  </ul>
+<ul class="sidebar-links"> <li>
+<section class="sidebar-group depth-0"> <img src="./img/readme_img.png" width="19%"> <p class="sidebar-heading open"> <span>Vuekyll</span> <!----> </p>
+<ul class="sidebar-links sidebar-group-items">{% for site.nav in nav %}<li><a href="{{ nav[1] }}" class="sidebar-link">{{ nav[0] }}</a></li>{% endfor %} </ul>
+</section> </li></ul>
 </aside>
 -->
