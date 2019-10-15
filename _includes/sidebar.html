@@ -4,7 +4,7 @@
 <aside class="sidebar" id="sidebarmask">
 <ul class="sidebar-links"> <li>
 <section class="sidebar-group depth-0"> <img src="./img/readme_img.png" width="19%"> <p class="sidebar-heading open"> <span>Vuekyll</span> <!----> </p>
-<ul class="sidebar-links sidebar-group-items">{% for site.nav in nav %}<li><a href="{{ nav[1] }}" class="sidebar-link">{{ nav[0] }}</a></li>{% endfor %} </ul>
+<ul class="sidebar-links sidebar-group-items">{% for nav in site.nav %}<li><a href="{{ nav[1] }}" class="sidebar-link">{{ nav[0] }}</a></li>{% endfor %} </ul>
 </section> </li></ul>
 </aside>
 -->
