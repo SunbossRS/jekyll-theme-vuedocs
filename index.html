@@ -1,150 +1,32 @@
 ---
-layout: default
 ---
 
-<!--main class="page"--> <div class="theme-default-content content__default"><h1 id="vuepress-theme-blog"><a href="#vuepress-theme-blog" aria-hidden="true" class="header-anchor">#</a> @vuepress/theme-blog</h1> <blockquote><p>Default blog theme for VuePress</p></blockquote> <h2 id="install"><a href="#install" aria-hidden="true" class="header-anchor">#</a> Install</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> @vuepress/theme-blog -D
-<span class="token comment"># OR npm install @vuepress/theme-blog -D</span>
-</code></pre></div><h2 id="usage"><a href="#usage" aria-hidden="true" class="header-anchor">#</a> Usage</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  theme<span class="token punctuation">:</span> <span class="token string">'@vuepress/blog'</span><span class="token punctuation">,</span>
-  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token comment">// Please keep looking down to see the available options.</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre></div><h2 id="options"><a href="#options" aria-hidden="true" class="header-anchor">#</a> Options</h2> <h3 id="nav"><a href="#nav" aria-hidden="true" class="header-anchor">#</a> nav</h3> <ul><li>Type: <code>Array&lt;{ text: string, link: string }&gt;</code></li> <li>Default: <code>undefined</code></li></ul> <p>e.g.</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token punctuation">{</span>
-        text<span class="token punctuation">:</span> <span class="token string">'Home'</span><span class="token punctuation">,</span>
-        link<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span>
-        text<span class="token punctuation">:</span> <span class="token string">'Archive'</span><span class="token punctuation">,</span>
-        link<span class="token punctuation">:</span> <span class="token string">'/archive/'</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">{</span>
-        text<span class="token punctuation">:</span> <span class="token string">'Tags'</span><span class="token punctuation">,</span>
-        link<span class="token punctuation">:</span> <span class="token string">'/tag/'</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-</code></pre></div><h3 id="footer"><a href="#footer" aria-hidden="true" class="header-anchor">#</a> footer</h3> <h4 id="footer-contact"><a href="#footer-contact" aria-hidden="true" class="header-anchor">#</a> footer.contact</h4> <ul><li>Type: <code>Array&lt;{ type: ContactType, link: string }&gt;</code></li> <li>Default: <code>undefined</code></li></ul> <p>Contact information, displayed on the left side of footer.</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    footer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      contact<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-          type<span class="token punctuation">:</span> <span class="token string">'github'</span><span class="token punctuation">,</span>
-          link<span class="token punctuation">:</span> <span class="token string">'https://github.com/vuejs/vuepress'</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span>
-          type<span class="token punctuation">:</span> <span class="token string">'twitter'</span><span class="token punctuation">,</span>
-          link<span class="token punctuation">:</span> <span class="token string">'https://github.com/vuejs/vuepress'</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p>For now <code>ContactType</code> supports following enums:</p> <ul><li>github</li> <li>facebook</li> <li>twitter</li> <li>instagram</li> <li>linkedin</li></ul> <div class="tip custom-block"><p>Welcome contribution of adding more built-in contact type.</p></div> <h4 id="footer-copyright"><a href="#footer-copyright" aria-hidden="true" class="header-anchor">#</a> footer.copyright</h4> <p>Copyright information, displayed on the right side of footer.</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    footer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      copyright<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-          text<span class="token punctuation">:</span> <span class="token string">'Privacy Policy'</span><span class="token punctuation">,</span>
-          link<span class="token punctuation">:</span> <span class="token string">'https://policies.google.com/privacy?hl=en-US'</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span>
-          text<span class="token punctuation">:</span> <span class="token string">'MIT Licensed | Copyright © 2018-present Vue.js'</span><span class="token punctuation">,</span>
-          link<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-</code></pre></div><h3 id="modifyblogpluginoptions"><a href="#modifyblogpluginoptions" aria-hidden="true" class="header-anchor">#</a> modifyBlogPluginOptions</h3> <p>A function used to modify the default blog plugin options of <a href="https://vuepress-plugin-blog.ulivz.com/" target="_blank" rel="noopener noreferrer">@vuepress/plugin-blog<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>. It's common to use it to add apply custom <a href="https://vuepress-plugin-blog.ulivz.com/#document-classifier" target="_blank" rel="noopener noreferrer">document classifiers<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>. e.g.</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token function">modifyBlogPluginOptions</span><span class="token punctuation">(</span><span class="token parameter">blogPlugnOptions</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">const</span> writingDirectoryClassifier <span class="token operator">=</span> <span class="token punctuation">{</span>
-        id<span class="token punctuation">:</span> <span class="token string">'writing'</span><span class="token punctuation">,</span>
-        dirname<span class="token punctuation">:</span> <span class="token string">'_writings'</span><span class="token punctuation">,</span>
-        path<span class="token punctuation">:</span> <span class="token string">'/writings/'</span><span class="token punctuation">,</span>
-        layout<span class="token punctuation">:</span> <span class="token string">'IndexWriting'</span><span class="token punctuation">,</span>
-        itemLayout<span class="token punctuation">:</span> <span class="token string">'Writing'</span><span class="token punctuation">,</span>
-        itemPermalink<span class="token punctuation">:</span> <span class="token string">'/writings/:year/:month/:day/:slug'</span><span class="token punctuation">,</span>
-        pagination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          perPagePosts<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span>
-      
-      blogPlugnOptions<span class="token punctuation">.</span>directories<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>writingDirectoryClassifier<span class="token punctuation">)</span>
-      <span class="token keyword">return</span> blogPlugnOptions
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p>Here is the default blog plugin options:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
-  directories<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-      id<span class="token punctuation">:</span> <span class="token string">'post'</span><span class="token punctuation">,</span>
-      dirname<span class="token punctuation">:</span> <span class="token string">'_posts'</span><span class="token punctuation">,</span>
-      path<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
-      layout<span class="token punctuation">:</span> <span class="token string">'IndexPost'</span><span class="token punctuation">,</span>
-      itemLayout<span class="token punctuation">:</span> <span class="token string">'Post'</span><span class="token punctuation">,</span>
-      itemPermalink<span class="token punctuation">:</span> <span class="token string">'/:year/:month/:day/:slug'</span><span class="token punctuation">,</span>
-      pagination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        perPagePosts<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span>
-      id<span class="token punctuation">:</span> <span class="token string">'archive'</span><span class="token punctuation">,</span>
-      dirname<span class="token punctuation">:</span> <span class="token string">'_archive'</span><span class="token punctuation">,</span>
-      path<span class="token punctuation">:</span> <span class="token string">'/archive/'</span><span class="token punctuation">,</span>
-      layout<span class="token punctuation">:</span> <span class="token string">'IndexArchive'</span><span class="token punctuation">,</span>
-      itemLayout<span class="token punctuation">:</span> <span class="token string">'Post'</span><span class="token punctuation">,</span>
-      itemPermalink<span class="token punctuation">:</span> <span class="token string">'/archive/:year/:month/:day/:slug'</span><span class="token punctuation">,</span>
-      pagination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        perPagePosts<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">]</span><span class="token punctuation">,</span>
-  frontmatters<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-      id<span class="token punctuation">:</span> <span class="token string">&quot;tag&quot;</span><span class="token punctuation">,</span>
-      keys<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'tag'</span><span class="token punctuation">,</span> <span class="token string">'tags'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-      path<span class="token punctuation">:</span> <span class="token string">'/tag/'</span><span class="token punctuation">,</span>
-      layout<span class="token punctuation">:</span> <span class="token string">'Tags'</span><span class="token punctuation">,</span>
-      frontmatter<span class="token punctuation">:</span> <span class="token punctuation">{</span> title<span class="token punctuation">:</span> <span class="token string">'Tags'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      itemlayout<span class="token punctuation">:</span> <span class="token string">'Tag'</span><span class="token punctuation">,</span>
-      pagination<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        perPagePosts<span class="token punctuation">:</span> <span class="token number">5</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">]</span>
-<span class="token punctuation">}</span>
-</code></pre></div><p><strong>Also see:</strong></p> <ul><li><a href="https://vuepress-plugin-blog.ulivz.com/#document-classifier" target="_blank" rel="noopener noreferrer">Document Classifier<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="summary"><a href="#summary" aria-hidden="true" class="header-anchor">#</a> summary</h3> <ul><li>Type: <code>boolean</code></li> <li>Default: <code>true</code></li></ul> <p>Whether to extract summary from source markdowns.</p> <h3 id="summarylength"><a href="#summarylength" aria-hidden="true" class="header-anchor">#</a> summaryLength</h3> <ul><li>Type: <code>number</code></li> <li>Default: <code>200</code></li></ul> <p>Set the length of summary.</p> <h3 id="pwa"><a href="#pwa" aria-hidden="true" class="header-anchor">#</a> pwa</h3> <ul><li>Type: <code>boolean</code></li> <li>Default: <code>false</code></li></ul> <p>Whether to enable PWA support. this option is powered by the <a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-pwa.html" target="_blank" rel="noopener noreferrer">official
-PWA plugin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>if you enable this option, the default options of the internal PWA
-plugin is as follows:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
-  serviceWorker<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  updatePopup<span class="token punctuation">:</span> <span class="token boolean">true</span>
-<span class="token punctuation">}</span>
-</code></pre></div><h3 id="paginationcomponent"><a href="#paginationcomponent" aria-hidden="true" class="header-anchor">#</a> paginationComponent</h3> <ul><li>Type: <code>string</code></li> <li>Default: <code>Pagination</code></li></ul> <p>Custom the pagination component.</p> <p>The default is the
-<a href="https://vuepress-plugin-blog.ulivz.com/components/#pagination" target="_blank" rel="noopener noreferrer">pagination component<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> powerful by
-<a href="https://github.com/ulivz/vuepress-plugin-blog" target="_blank" rel="noopener noreferrer">@vuepress/plugin-blog<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>:</p> <img src="/assets/img/pagination.0707dd1a.png" width="250" height=""> <p>You can set this option to <code>SimplePagination</code> to enable another out-of-box
-<a href="https://vuepress-plugin-blog.ulivz.com/components/#simplepagination" target="_blank" rel="noopener noreferrer">simple pagination component<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>:</p> <img src="/assets/img/simple-pagination.a87ba3f0.png" width="250" height=""> <p>You can also wirte a custom pagination component and register it as a global component. then pass its
-name to this option.</p> <h2 id="front-matter"><a href="#front-matter" aria-hidden="true" class="header-anchor">#</a> Front Matter</h2> <h3 id="tag-tags"><a href="#tag-tags" aria-hidden="true" class="header-anchor">#</a> tag/tags</h3> <ul><li>Type: <code>string|string[]</code></li> <li>Default: <code>200</code></li></ul> <p>e.g.</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
-tags: 
-  <span class="token list punctuation">-</span> JavaScript
-  <span class="token title important">- DOM
-<span class="token punctuation">---</span></span>
-</code></pre></div><h3 id="date"><a href="#date" aria-hidden="true" class="header-anchor">#</a> date</h3> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
-<span class="token title important">date: 2016-10-20 20:44:40
-<span class="token punctuation">---</span></span>
-</code></pre></div><h3 id="author"><a href="#author" aria-hidden="true" class="header-anchor">#</a> author</h3> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
-<span class="token title important">author: ULIVZ
-<span class="token punctuation">---</span></span>
-</code></pre></div><h3 id="location"><a href="#location" aria-hidden="true" class="header-anchor">#</a> location</h3> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
-<span class="token title important">location: Hangzhou
-<span class="token punctuation">---</span></span>
-</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> <!--/main--></div><div class="global-ui"></div></div>
-    <script src="//vuepress-theme-blog.ulivz.com/assets/js/app.c2ff6b9c.js" defer></script><script src="//vuepress-theme-blog.ulivz.com/assets/js/2.6ad828a4.js" defer></script><script src="//vuepress-theme-blog.ulivz.com/assets/js/4.7b55a7d0.js" defer></script>
+<html>
+
+{% include head.html %}
+
+<body>
+  <div id="app" data-server-rendered="true">
+    <div class="theme-container no-sidebar">
+      <header class="navbar">
+        <div class="sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
+        </div>
+        <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">Vssue</span></a>
+        <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div>
+        <nav class="nav-links can-hide"><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/options/" class="nav-link">Options</a></div><div class="nav-item"><a href="https://github.com/meteorlxy/vssue/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Changelog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div> <a href="https://github.com/meteorlxy/vssue" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div><div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/options/" class="nav-link">Options</a></div><div class="nav-item"><a href="https://github.com/meteorlxy/vssue/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Changelog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div> <a href="https://github.com/meteorlxy/vssue" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><img src="/logo.png" alt="hero"> <h1 id="main-title">Vssue</h1> <p class="description">
+      A Vue-powered Issue-based Comment Plugin
+    </p> <p class="action"><a href="/guide/" class="nav-link action-button">Get Started →</a></p></header> <div class="features"><div class="feature"><h2>Comments</h2> <p>Enable comments support for static pages, based on the issue system of code hosting services.</p></div><div class="feature"><h2>Multi-platform</h2> <p>Support multiple code hosting services, including GitHub, GitLab, Bitbucket and Gitee.</p></div><div class="feature"><h2>Use Vue</h2> <p>Use Vssue as a Vue plugin, and can be integrated in your Vue App easily.</p></div></div> <div class="theme-default-content custom content__default"><h2 id="demo"><a href="#demo" aria-hidden="true" class="header-anchor">#</a> Demo</h2> <p>Demo of current page is for GitHub.</p> <p>Go to the <a href="/demo/">Demo Page</a> for all supported platforms.</p> <div class="tip custom-block"><p>After you comment on an issue, the platform will send you emails when new comments come. The emails might be annoying when new users come and leave comments on this demo page.</p> <p>You can go to the <a href="https://github.com/meteorlxy/vssue/issues/1" target="_blank" rel="noopener noreferrer">issue page<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and unsubscribe the notifications.</p></div> <!----></div> <div class="footer">
+    MIT Licensed | Vssue
+  </div></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/vendor.2.38fd52d5.js" defer></script><script src="/assets/js/5.8be96968.js" defer></script><script src="/assets/js/4.9390d935.js" defer></script><script src="/assets/js/vendor.1.d267f978.js" defer></script><script src="/assets/js/vendor.0.a1c4b631.js" defer></script><script src="/assets/js/app.a16a9b43.js" defer></script>
   </body>
 </html>
