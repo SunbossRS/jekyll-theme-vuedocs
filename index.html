@@ -9,7 +9,7 @@
   <div id="app" data-server-rendered="true">
     <div class="theme-container no-sidebar">
       <header class="navbar">
-        <div class="sidebar-button"> <img src="{{ /img/sidebar_button.svg | prepend: site.baseurl }}"> </div>
+        <div class="sidebar-button"> <img src="{{ img/sidebar_button.svg | prepend: site.baseurl }}"> </div>
         <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
         <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div>
         <nav class="nav-links can-hide">{% for nav in site.nav %}<div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>{% endfor %}<div class="nav-item"><a href="/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="/options/" class="nav-link">Options</a></div><div class="nav-item"><a href="https://github.com/meteorlxy/vssue/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
