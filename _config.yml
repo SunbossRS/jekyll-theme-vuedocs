@@ -18,7 +18,8 @@ author:
   description: 'I am a student.'
 
 ## The base of the site
-baseurl: ''
+##-- Add '/' at last
+baseurl: 'jekyll-theme-vuekyll/'
 
 ## Language (blank = 'en')
 ##-- cn, en
