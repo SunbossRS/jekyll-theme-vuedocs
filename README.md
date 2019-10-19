@@ -1,7 +1,7 @@
 ![Header](/img/readme_img.png)
 ## jekyll-theme-vuekyll
+**This is a good theme, but it is still in beta. Coming soon!**
 > Follow vue.js and start from jekyll now! 
-**This project is still in beta, not for using now.**
 
 #### What is Vuekyll
 Vuekyll is a new theme with a nice interface. The interface may looks like the Vue.js official site.  
