@@ -37,10 +37,11 @@ Welcome to send pull requests or issues.
 
 #### Todo
 > People who have dreams & goals are very happy.
+- [x] New style of the homepage
 - [ ] Better homepage & posts interface
 - [ ] Administrator management module
 - [ ] Support [Vssue](https://vssue.js.org) comment system
 - [ ] Better definiation page
 
 #### License
-This open source project has running under MIT license.
+This open source project has standing under MIT license.
