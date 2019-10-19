@@ -7,6 +7,12 @@ layout: default
 font-family: handwrite-wwx
 }
 
+#main_title{
+position: absolute;
+top: 0;
+left: 0;
+}
+
 @font-face{
 font-family: handwrite-wwx;
 src: url('./lib/handwrite-wwx.ttf')
@@ -15,6 +21,7 @@ src: url('./lib/handwrite-wwx.ttf')
 
 <main aria-labelledby="main-title" class="home">
   <header class="hero">
+    <div style="position: relative; width: 170px; height: 89px;">
     <img src="/{{site.baseurl}}img/readme_img.png" !--alt="hero"-->
     <h1 id="main-title" class="header_title">{{ site.title }}</h1>
     <p class="description">A Vue-powered Issue-based Comment Plugin</p>
