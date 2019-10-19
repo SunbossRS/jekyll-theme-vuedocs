@@ -9,7 +9,7 @@
   <div id="app" data-server-rendered="true">
     <div class="theme-container no-sidebar">
       <header class="navbar">
-        <div class="sidebar-button"> <!--a href="#" class="nav-link"--> <img src="img/sidebar_button.svg"> <!--/a--> </div>
+        <div class="sidebar-button"> <!--a href="#sidebartile" class="nav-link"--> <img src="img/sidebar_button.svg"> <!--/a--> </div>
         <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
         <div class="links">
           <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div>
@@ -17,7 +17,7 @@
         </div>
       </header>
       <div class="sidebar-mask"></div>
-      <aside class="sidebar">
+      <aside id="sidebartile" class="sidebar">
         <nav class="nav-links">{% for nav in site.nav %}<div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>{% endfor %}<div class="nav-item"> <div class="dropdown-wrapper"> <a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div>
           <a href="https://github.com/meteorlxy/vssue" target="_blank" rel="noopener noreferrer" class="repo-link">
             GitHub
