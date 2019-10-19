@@ -9,15 +9,13 @@ position: relative
 
 #header_description{
 position: absolute;
+font-family: handwrite-wwx;
 top: 10;
 left: 0;
 }
 
 .header_title{
-font-family: handwrite-wwx
-}
-
-#main_title{
+font-family: handwrite-wwx;
 position: absolute;
 top: 0;
 left: 0;
@@ -33,7 +31,7 @@ src: url('./lib/handwrite-wwx.ttf')
   <header class="hero">
     <div style="header_section">
       <img src="/{{site.baseurl}}img/readme_img.png" alt="hero">
-      <h1 id="main-title" class="header_title">{{ site.title }}</h1>
+      <h1 class="header_title">{{ site.title }}</h1>
       <p id="header_description" class="description">{{ site.description }}</p>
     </div>
     <p class="action"><a href="/guide/" class="nav-link action-button">Get Started →</a></p>
