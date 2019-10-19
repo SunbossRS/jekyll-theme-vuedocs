@@ -12,7 +12,7 @@
         <div class="sidebar-button"> <!--a href="#sidebartile" class="nav-link"--> <img src="img/sidebar_button.svg"> <!--/a--> </div>
         <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
         <div class="links">
-          <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div>
+          <div class="search-box"><input aria-label="Search" autocomplete="off" id="searchbox" spellcheck="false" value=""> <div id="resultbox"></div> <!----></div>
           <nav class="nav-links can-hide">{% for nav in site.nav %}<div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>{% endfor %}</nav>
         </div>
       </header>
@@ -29,5 +29,13 @@
     MIT Licensed | Vssue
   </div></main></div><div class="global-ui"><!----><!----></div></div>
     <script src="/assets/js/vendor.2.38fd52d5.js" defer></script><script src="/assets/js/5.8be96968.js" defer></script><script src="/assets/js/4.9390d935.js" defer></script><script src="/assets/js/vendor.1.d267f978.js" defer></script><script src="/assets/js/vendor.0.a1c4b631.js" defer></script><script src="/assets/js/app.a16a9b43.js" defer></script>
+<script>
+SimpleJekyllSearch({
+  search-input: document.getElementById('searchbox'),
+  resultsContainer: document.getElementById('resultbox'),
+  json: '/search.json',
+  searchResultTemplate: '<div class="nav-item"><li><a href="{{ site.url }}{url}" class="nav-link">{title}</a></li>'
+})
+</script>
   </body>
 </html>
