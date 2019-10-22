@@ -10,8 +10,8 @@ text-align: center;
 #header_description, #header_description p {
 position: absolute;
 font-family: handwritettf;
-bottom: 50%;
-left: 50%;
+/*bottom: 50%;*/
+/*left: 50%;*/
 margin-bottom: -100px;
 margin-left: -100px;
 }
