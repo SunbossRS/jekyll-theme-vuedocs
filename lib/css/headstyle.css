@@ -1,0 +1,29 @@
+/**
+Site header section CSS file
+**/
+
+#header_section{
+position: relative;
+text-align: center;
+}
+
+#header_description, #header_description p {
+position: absolute;
+font-family: handwritettf;
+bottom: 50%;
+left: 50;
+transform: translate(-50%, -50%);
+}
+
+.header_title, .header_title h1 {
+font-family: handwritettf;
+position: absolute;
+bottom: 50%;
+left: 50;
+transform: translate(-50%, -50%);
+}
+
+@font-face{
+font-family: handwritettf;
+src: url('./lib/handwrite-wwx.ttf')
+}
