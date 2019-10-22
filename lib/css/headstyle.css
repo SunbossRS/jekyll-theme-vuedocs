@@ -12,7 +12,6 @@ position: absolute;
 font-family: handwritettf;
 bottom: 50%;
 left: 50%;
-margin: 0 auto;
 }
 
 .header_title {
@@ -20,7 +19,6 @@ font-family: handwritettf;
 position: absolute;
 bottom: 50%;
 left: 50%;
-margin: 0 auto;
 }
 
 @font-face{
