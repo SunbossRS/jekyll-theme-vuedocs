@@ -11,16 +11,18 @@ text-align: center;
 position: absolute;
 font-family: handwritettf;
 bottom: 50%;
-left: 50;
-transform: translate(-50%, -50%);
+left: 50%;
+margin-top:-100px;
+margin-left:-100px;
 }
 
 .header_title, .header_title h1 {
 font-family: handwritettf;
 position: absolute;
 bottom: 50%;
-left: 50;
-transform: translate(-50%, -50%);
+left: 50%;
+margin-top:-100px;
+margin-left:-100px;
 }
 
 @font-face{
