@@ -1,15 +1,19 @@
+---
+---
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>test.vuekyll.site.title</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="theme-color" content="#34c88a">
-    <meta name="msapplication-TileColor" content="#34c88a">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#34c88a">
+  <meta name="msapplication-TileColor" content="#34c88a">
     
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <!--Marked.Mainstyle--><!link rel="stylesheet" href="./lib/css/5c98d129.css">
-    <!--Marked.Auxiliary--><!link rel="stylesheet" href="./lib/css/a1c4b631.css">
-    <link rel="stylesheet" href="./lib/css/3599a0e2.css">
-    <!--link rel="stylesheet" href="./lib/css/5c98d129.css"-->
-    <script src="https://unpkg.com/simple-jekyll-search@1.5.0/dest/simple-jekyll-search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!--Marked.Mainstyle--><!link rel="stylesheet" href="./lib/css/5c98d129.css">
+  <!--Marked.Auxiliary--><!link rel="stylesheet" href="./lib/css/a1c4b631.css">
+  {% if page.layout == post %}
+  <!--Marked.Vssue--><!link rel="stylesheet" href="./lib/css/3599a0e2.css">
+  {% endif %}
+  <script src="https://unpkg.com/simple-jekyll-search@1.5.0/dest/simple-jekyll-search.min.js"></script>
   </head>
