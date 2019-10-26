@@ -1,0 +1,72 @@
+---
+---
+
+{% assign info = site.comment_info %}
+<div id=""></div>
+
+{% if site.comment == "vssue" %}
+<link rel="stylesheet" href="{{ "/lib/css/3599a0e2.css" | prepend: site.baseurl}}">
+<script src="https://unpkg.com/vssue/dist/vssue.{{ site.vssue_platform }}.min.js"></script>
+<script>
+  new Vue({
+    el: '#commenr',
+    data: {
+      title: '{{ page.title }}',
+      options: {
+        owner: '{{ info.owner }}',
+        repo: '{{ info.repo }}',
+        clientId: '{{ info.clientid }}',
+        clientSecret: '{{ info.clientsecret }}', // only required for some of the platforms
+      },
+    },
+
+    template: `<vssue :title="title" :options="options"></vssue>`,
+  })
+</script>
+{% endif %}
+
+{% if site.comment == "gitalk" %}
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '{{ info.clientid}}',
+    clientSecret: '{{ info.clientsecret }}',
+    repo: '{{ info.repo}}',
+    owner: '{{ info.owner }}',
+    admin: ['{{ info.owner }}'],
+    id: {{ page.title }},      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('comment')
+</script>
+{% endif %}
+
+{% if site.comment == "disqus" %}
+<div id="disqus_thread"></div>
+<script>
+ (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+     var d = document, s = d.createElement('script');
+     
+     s.src = '//{{ info.disqus_shortname }}.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+     
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{% endif %}
+
+{% if site.comment == "valine" %}
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+  new Valine({
+      el: '#comment',
+      appId: '{{ info.appid }}',
+      appKey: '{{ info.appkey }}',
+      placeholder: '{{ info.valine_placeholder }}'
+  })
+</script>
+{% endif %}
