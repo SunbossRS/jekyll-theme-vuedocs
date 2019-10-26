@@ -26,7 +26,7 @@ nav:
   About: '/about'
   Friends: '/friends'
 
-## Site comment system option (option: vssue, gitalk, disqus)
+## Site comment system option (option: vssue, gitalk, disqus, valine)
 comment: vssue
 
 ## Infos for comment system
