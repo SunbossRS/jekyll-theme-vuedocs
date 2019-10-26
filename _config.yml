@@ -26,6 +26,17 @@ nav:
   About: '/about'
   Friends: '/friends'
 
+## Site comment system option (option: vssue, gitalk, disqus)
+comment: vssue
+
+## Infos for comment system
+vssue_platform: github # (option: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
+comment_info:
+  clientid: 
+  clientsecret: # (if not requred, keep blank)
+  repo:
+  owner:
+
 ## Manager panel
 manager:
   use: '' # true / false
