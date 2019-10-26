@@ -32,10 +32,14 @@ comment: vssue
 ## Infos for comment system
 vssue_platform: github # (option: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
 comment_info:
-  clientid: 
-  clientsecret: # (if not requred, keep blank)
-  repo:
-  owner:
+  clientid: '' 
+  clientsecret: '' # (if not requred, keep blank)
+  repo: ''
+  owner: ''
+  disqus_shortname: '' # (keep blank if u r not using disqus)
+  appid: '' # (keep blank if u r not using valine)
+  appkey: '' # (keep blank if u r not using valine)
+  valine_placeholder: '' # (keep blank if u r not using valine)
 
 ## Manager panel
 manager:
