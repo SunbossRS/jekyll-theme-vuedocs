@@ -12,6 +12,7 @@ position: absolute;
 font-family: handwritettf;
 bottom: 50%;
 left: 50%;
+margin-bottom: -50%;
 }
 @font-face{
 font-family: handwritettf;
@@ -40,7 +41,7 @@ src: url('./lib/handwrite-wwx.ttf')
     <div class="features">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="feature">Next →</a>
     {% else %}
-    <a disabled class="link feature"></a>
+    <a class="link feature"></a>
     {% endif %}
   </div>
     <h2 id="demo"><a href="#demo" aria-hidden="true" class="header-anchor">#</a> Demo</h2>
