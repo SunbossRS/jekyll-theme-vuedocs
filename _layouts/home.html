@@ -27,15 +27,17 @@ src: url('./lib/handwrite-wwx.ttf')
     </div>
   </header>
   {{ content }}
-  <div class="features theme-default-content custom content__default">
-    {% if paginator.previous_page %}
+  {% if paginator.previous_page %}
+  <div class="features">
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="links feature">← Prev</a>
     {% else %}
     <a disabled class="links feature"></a> 
-    {% endif %}
   </div>
+  {% endif %}
+  <p class="feature">{{paginator.page}}/{{paginator.total_pages}}</p>
   <div class="feature theme-default-content custom content__default">
     {% if paginator.next_page %}
+    <div class="features">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="feature">Next →</a>
     {% else %}
     <a disabled class="link feature"></a>
