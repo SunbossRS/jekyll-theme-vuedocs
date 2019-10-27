@@ -47,7 +47,7 @@ manager:
   edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' # Your open-source platform repo url + /edit/master/
 
 ## Show how many posts per page
-paginate: 5
+paginate: 2
 
 ## The paginate path location
 paginate_path: "/page:num/"
