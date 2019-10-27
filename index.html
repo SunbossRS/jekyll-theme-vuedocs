@@ -1,58 +1,12 @@
 ---
-layout: default
+layout: home
 ---
 
-<!--link rel="stylesheet" href="./lib/css/headstyle.css"-->
-
-<style>
-.header_section {
-position: relative;
-font-family: handwritettf;
-}
-
-.header {
-position: absolute;
-/*font-family: handwritettf;*/
-bottom: 50%;
-left: 50%;
-}
-
-@font-face{
-font-family: handwritettf;
-src: url('./lib/handwrite-wwx.ttf')
-}
-</style>
-
-<main aria-labelledby="main-title" class="home">
-  <header class="hero">
-    <div id="header_section">
-      <img src="/{{site.baseurl}}img/readme_img.png" alt="hero">
-      <h1 class="header_title">{{ site.title }}</h1> <p id="header_description" class="description">{{ site.description }}</p>
-    </div>
-  </header>
-  <div class="features">
-    {% for post in paginator.posts %}
-    <div class="feature">
-      <a href="/{{ site.url }}{{ post.url }}"><h2>{{ post.title }}</h2>
-      <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p></a>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="theme-default-content custom content__default">
-    <h2 id="demo"><a href="#demo" aria-hidden="true" class="header-anchor">#</a> Demo</h2>
-    <p>Demo of current page is for GitHub.</p>
-    <p>Go to the <a href="/demo/">Demo Page</a> for all supported platforms.</p>
-    <div class="tip custom-block"><p>After you comment on an issue, the platform will send you emails when new comments come. The emails might be annoying when new users come and leave comments on this demo page.</p> <p>You can go to the <a href="https://github.com/meteorlxy/vssue/issues/1" target="_blank" rel="noopener noreferrer">issue page<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and unsubscribe the notifications.</p></div> <!----></div> <div class="footer">
-    MIT Licensed | Vssue
-  </div></main></div><div class="global-ui"><!----><!----></div></div>
-    <script src="/assets/js/vendor.2.38fd52d5.js" defer></script><script src="/assets/js/5.8be96968.js" defer></script><script src="/assets/js/4.9390d935.js" defer></script><script src="/assets/js/vendor.1.d267f978.js" defer></script><script src="/assets/js/vendor.0.a1c4b631.js" defer></script><script src="/assets/js/app.a16a9b43.js" defer></script>
-<script>
-SimpleJekyllSearch({
-  search-input: document.getElementById('searchbox'),
-  resultsContainer: document.getElementById('resultbox'),
-  json: '/search.json',
-  searchResultTemplate: '<div class="nav-item"><li><a href="{{ site.url }}{url}" class="nav-link">{title}</a></li></div>'
-})
-</script>
-  </body>
-</html>
+<div class="features">
+  {% for post in paginator.posts %}
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+  </a>
+  {% endfor %}
+</div>
