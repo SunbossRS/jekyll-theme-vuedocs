@@ -28,22 +28,6 @@ src: url('./lib/handwrite-wwx.ttf')
     </div>
   </header>
   {{ content }}
-  {% if paginator.previous_page %}
-  <div class="features">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="links feature">← Prev</a>
-    {% else %}
-    <a disabled class="links feature"></a> 
-  </div>
-  {% endif %}
-  <p class="feature">{{paginator.page}}/{{paginator.total_pages}}</p>
-  <div class="feature theme-default-content custom content__default">
-    {% if paginator.next_page %}
-    <div class="features">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="feature">Next →</a>
-    {% else %}
-    <a class="link feature"></a>
-    {% endif %}
-  </div>
     <h2 id="demo"><a href="#demo" aria-hidden="true" class="header-anchor">#</a> Demo</h2>
     <p>Demo of current page is for GitHub.</p>
     <p>Go to the <a href="/demo/">Demo Page</a> for all supported platforms.</p>
