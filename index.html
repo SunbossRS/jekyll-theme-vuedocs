@@ -4,7 +4,7 @@ layout: home
 
 <div class="features">
   {% for post in paginator.posts %}
-  <a href="{{ site.baseurl }}{{ post.url }}">
+  <a href="{{ post.url | relative_url }}">
     <h3>{{ post.title }}</h2>
     <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
   </a>
