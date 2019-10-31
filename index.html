@@ -24,10 +24,9 @@ font-family: handwritettf;
 src: url('./lib/handwrite-wwx.ttf')
 }
 
-.post_img_face {
-position: absolute;
-height: 100%;
-width: 100%;
+.post_img_face, .post_img_face .img {
+height: 60%;
+width: 60%;
 top: 0;
 z-index: -1;
 -webkit-filter: blur(5px);
@@ -46,7 +45,7 @@ transform: scale(1.2);
   <div class="features">
   {% for post in paginator.posts %}
     <a href="{{ post.url | relative_url }}">
-      <div class="post_img_face"><img src="{{ post.img | relative_url }}"><h3>{{ post.title }}</h2></div>
+      <div class="post_img_face" {% if post.img == "" or null %}style="background: black;"{% endif %}>{% if post.img %}<img src="{{ post.img | relative_url }}">{% endif %}<h3>{{ post.title }}</h2></div>
       <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
     </a><hr>
   {% endfor %}
