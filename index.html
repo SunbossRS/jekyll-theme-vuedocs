@@ -8,6 +8,7 @@ position: relative;
 margin:0 auto;
 font-family: handwritettf;
 }
+
 .header {
 position: absolute;
 font-family: handwritettf;
@@ -17,36 +18,40 @@ left: 50%;
 /*margin-left: 50%;*/
 text-align: center;
 }
-@font-face{
+
+@font-face {
 font-family: handwritettf;
 src: url('./lib/handwrite-wwx.ttf')
+}
+
+.post_img_face {
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+z-index: -1;
+-webkit-filter: blur(5px);
+filter: blur(15px);
+transform: scale(1.2);
 }
 </style>
 
 <main aria-labelledby="main-title" class="home">
   <header class="hero">
     <div id="header_section">
-      <img src="/{{site.baseurl}}img/readme_img.png" alt="hero">
+      <img src="{{ 'img/readme_img.png' | prepend: site.baseurl | relative_url }}" alt="hero">
       <h1 class="header">{{ site.title }}</h1> <p class="description header">{{ site.description }}</p>
     </div>
   </header>
-  {{ content }}
-  {% if paginator.total_pages > 1 %}
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a href="{{ "/" | relative_url }}" class="feature link" title="Previous">← Prev</a>
-        {% else %}
-        <a href="/page{{ paginator.previous_page }}/" class="feature link" title="Previous">← Prev</a>
-      {% endif %}
-    {% endif %}
-    {% if paginator.next_page %}
-      {% if paginator.next_page == 1 %}
-        <a href="{{ "/{{ paginator.path" | relative_url }}" class="feature link" title="Next">Next →</a>
-        {% else %}
-        <a href="{{ "/page{{ paginator.path" | relative_url }}" class="feature link"></a>
-      {% endif %}
-    {% endif %}
-  {% endif %}
+  <div class="features">
+  {% for post in paginator.posts %}
+    <a href="{{ post.url | relative_url }}">
+      <div class="post_img_face"><img src="{{ post.img | relative_url }}"><h3>{{ post.title }}</h2></div>
+      <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+    </a><hr>
+  {% endfor %}
+  </div>
+  {% include paginator.html %}
   <h2 id="demo"><a href="#demo" aria-hidden="true" class="header-anchor">#</a> Demo</h2>
     <p>Demo of current page is for GitHub.</p>
     <p>Go to the <a href="/demo/">Demo Page</a> for all supported platforms.</p>
@@ -63,13 +68,3 @@ SimpleJekyllSearch({
   searchResultTemplate: '<div class="nav-item"><li><a href="{{ site.url }}{url}" class="nav-link">{title}</a></li></div>'
 })
 </script>
-
-
-<div class="features">
-  {% for post in paginator.posts %}
-  <a href="{{ post.url | relative_url }}">
-    <h3>{{ post.title }}</h2>
-    <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
-  </a>
-  {% endfor %}
-</div>
