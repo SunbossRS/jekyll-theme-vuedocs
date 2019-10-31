@@ -1,0 +1,20 @@
+<div class="page-nav">
+  <p class="inner">
+  {% if paginator.total_pages >= 1 %}
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <span class="prev">←<a href="{{ "/" | relative_url }}" class="prev router-link-active" title="Previous">← Prev</a></span>
+        {% else %}
+        <span class="prev">←<a href="/page{{ paginator.previous_page }}/" class="prev router-link-active" title="Previous">← Prev</a></span>
+      {% endif %}
+    {% endif %}
+    {% if paginator.next_page %}
+      {% if paginator.next_page == 1 %}
+        <span class="next"><a href="/page{{ paginator.next_page }}" title="Next">Next</a> →</span>
+        {% else %}
+        <span class="next"><a href="/page{{ paginator.next_page }}" title="Next">Next</a> →</span>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  </p>
+</div>
