@@ -1,6 +1,7 @@
-<div class="sidebar-mask"></div>
-<aside id="sidebartile" class="sidebar">
-  <nav class="nav-links">{% for nav in site.nav %}<div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>{% endfor %}<div class="nav-item"> <div class="dropdown-wrapper"> <a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">English</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div>
-    <a href="https://github.com/meteorlxy/vssue" target="_blank" rel="noopener noreferrer" class="repo-link">GitHub</a>
-  </nav>  <!---->
-</aside>
+<div class="nav-item">
+  <div class="dropdown-wrapper">
+    <ul class="nav-dropdown" style="display:none;">
+      {% for nav in site.nav %}<li class="dropdown-item"><a href="{{ nav[1] }}" class="nav-link router-link-exact-active router-link-active">{{ nav[0] }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</div>
