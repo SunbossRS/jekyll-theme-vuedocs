@@ -45,7 +45,7 @@ transform: scale(1.2);
   <div class="features">
   {% for post in paginator.posts %}
     <a href="{{ post.url | relative_url }}">
-      <div class="post_img_face" {% if post.img == "" or null %}style="background: black;"{% endif %}>{% if post.img %}<img src="{{ post.img | relative_url }}">{% endif %}<h3>{{ post.title }}</h2></div>
+      <div class="post_img_face" {% if post.img == "" or null %}style="height: 30%; width: 80%; background: black;"{% endif %}>{% if post.img %}<img src="{{ post.img | relative_url }}">{% endif %}<h3>{{ post.title }}</h2></div>
       <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
     </a><hr>
   {% endfor %}
