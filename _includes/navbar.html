@@ -1,8 +1,14 @@
 <header class="navbar">
-  <a class="dropdown-title"><div class="sidebar-button"> <img width="12" height="12" src="{{ '/img/sidebar_button.svg' | prepend: site.baseurl | relative_url }}"> </div> </a>
-  <a href="{{ '/' | prepend: site.baseurl | relative_url }}" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
+  <button onclick="menuopen();" class="dropdown-title"><div class="sidebar-button"> <img width="12" height="12" src="{{ '/img/sidebar_button.svg' | prepend: site.baseurl }}"> </div> </button>
+  <a href="{{ '/' | prepend: site.baseurl }}" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
   <div class="links">
-    <div class="search-box"><input aria-label="Search" autocomplete="off" id="searchbox" spellcheck="false" value=""> <div id="resultbox"></div> <!----></div>
+    <div class="search-box"><input aria-label="Search" autocomplete="off" id="searchbox" spellcheck="true" value=""> <div id="resultbox"></div> <!----></div>
     <nav class="nav-links can-hide">{% for nav in site.nav %}<div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>{% endfor %}</nav>
   </div>
 </header>
+
+<script>
+  function menuopen() {
+    $('nav_dropdown').css('display', 'block')
+  }
+</script>
