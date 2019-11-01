@@ -75,7 +75,7 @@ animation: slide_in 0.5s;
     <a class="slide" href="{{ post.url | relative_url }}">
       {% if post.img %}<div class="post_img_face"><img src="{{ post.img | relative_url }}">{% else %}<div style="height: 60%; width: 80%; background: rgb(0,0,0);" class="no_bg_img_face">{% endif %} <h3>{{ post.title }}</h3></div>
       <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
-      <i>{{ post.date }}</i>
+      <i>{{ post.date | remove: "+0000" | remove: "00:00:00" }}</i>
     </a>
   {% endfor %}
   </div>
