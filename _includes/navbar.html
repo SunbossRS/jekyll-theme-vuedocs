@@ -1,6 +1,6 @@
 <header class="navbar">
   <a onclick="menuopen();" class="dropdown-title"><div class="sidebar-button"> <img width="12" height="12" src="{{ '/img/sidebar_button.svg' | prepend: site.baseurl }}"> </div> </a>
-  <a href="{{ '/' | prepend: site.baseurl }}" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
+  <a href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">{{ site.title }}</span></a>
   <div class="links">
     <div class="search-box"><input aria-label="Search" autocomplete="off" id="searchbox" spellcheck="true" value=""> <div id="resultbox"></div> <!----></div>
     <nav class="nav-links can-hide">{% for nav in site.nav %}<div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>{% endfor %}</nav>
