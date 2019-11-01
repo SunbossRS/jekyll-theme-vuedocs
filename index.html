@@ -33,21 +33,35 @@ z-index: -1;
 filter: blur(15px);
 transform: scale(1.2);
 }
+
+@-webkit-keyframes slide_in {
+from {
+opacity: 0;
+-webkit-transform: translateY(40px);
+}
+to {
+opacity: 1;
+-webkit-transform: translateY(0);
+     }
+}
+.slide {
+-webkit-animation: slide_in 1s;
+animation: slide_in 1s;
 </style>
 
 <main aria-labelledby="main-title" class="home">
   <header class="hero">
     <div id="header_section">
-      <img src="{{ 'img/readme_img.png' | prepend: site.baseurl | relative_url }}" alt="hero">
+      <img src="{{ '/img/readme_img.png' | prepend: site.baseurl | relative_url }}" alt="hero">
       <h1 class="header">{{ site.title }}</h1> <p class="description header">{{ site.description }}</p>
     </div>
   </header>
   <div class="features">
   {% for post in paginator.posts %}
-    <a href="{{ post.url | relative_url }}">
+    <a class="slide" href="{{ post.url | relative_url }}">
       {% if post.img %}<div class="post_img_face"><img src="{{ post.img | relative_url }}"></div>{% else %}<div style="height: 60%; width: 80%; background: black;"></div>{% endif %} <h3>{{ post.title }}</h2></div>
       <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
-    </a><hr>
+    </a>
   {% endfor %}
   </div>
   {% include paginator.html %}
