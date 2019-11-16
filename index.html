@@ -42,8 +42,8 @@ animation: slide_in 0.5s;
     <div class="feature">
       <a class="animation" href="{{ post.url | relative_url }}">
         <h2>{{ post.title }}</h2>
-        <h6>{{ post.date | remove: "+0000" | remove: "00:00:00" }}</h6>
-        <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+        <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 30 }}</p>
+        <p color>{{ post.date | remove: "+0000" | remove: "00:00:00" }}</h6>
       </a>
     </div>
   {% endfor %}
