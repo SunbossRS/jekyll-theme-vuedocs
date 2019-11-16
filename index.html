@@ -34,16 +34,16 @@ animation: slide_in 0.5s;
   <header class="hero">
     <div id="header_section">
       <img src="{{ '/img/readme_img.png' | prepend: site.baseurl }}" alt="hero">
-      <h1 class="header">{{ site.title }}</h1> <p class="description header">{{ site.description }}</p>
+      <h1>{{ site.title }}</h1> <p class="description">{{ site.description }}</p>
     </div>
   </header>
   <div class="features">
   {% for post in paginator.posts %}
-    <div class="feature">
-      <a class="animation" href="{{ post.url | relative_url }}">
+    <div class="feature animation">
+      <a href="{{ post.url | relative_url }}">
         <h2>{{ post.title }}</h2>
         <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 30 }}</p>
-        <p color>{{ post.date | remove: "+0000" | remove: "00:00:00" }}</h6>
+        <img width="12" src="{{ '/img/date.svg' | relative_url }}"><p color="#ADADA">{{ post.date | remove: "+0000" | remove: "00:00:00" }}</p>
       </a>
     </div>
   {% endfor %}
