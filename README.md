@@ -1,19 +1,18 @@
 ![Header](/img/readme_img.png)
-## jekyll-theme-vuekyll
+## jekyll-theme-vuedocs
 **This is a good theme, but it is still in beta. Coming soon!**
 > Follow vue.js and start from jekyll now! 
 
-#### What is Vuekyll
-Vuekyll is a new theme with a nice interface. The interface may looks like the Vue.js official site.  
+#### What is `jekyll-theme-vuedocs`?
+Vuedocs is a new jekyll theme with a nice interface. The interface may looks like the Vuepress official site.  
 Of course, we also add some awesome features, we wish you can love this theme!
 
 #### How to use
-First, clone this repository.
+Clone this repository first!
 ```bash
-git clone https://github.com/sunbossrs/jekyll-theme-vuekyll
+git clone https://Github.com/SunbossRS/jekyll-theme-vuedocs.git
 ```
-Then, run this repository on the Jekyll inside your computer.  
-Exec command:
+Run this repository via your jekyll host!
 ```
 jekyll serve
 ```
@@ -21,27 +20,27 @@ jekyll serve
 
 #### Contribution
 Thanks for everyone to support this theme!  
-Welcome to send pull requests or issues.
+Welcome you to send pull requests or issues!
 
-#### Using things in this project
-- [Vue.js](https://vuejs.org/)
+#### Stuff in this project
+- [Vue.js](https://vuejs.org/) support
 - [VuePress](https://vuepress.js.org/) original theme styles
 - [Vssue](https://vssue.js.org/) comment system
-- [Prism.js](https://prismjs.com/)
+- [Prism.js](https://prismjs.com/) code hightlights
 
 #### Features
 - Code highlights
-  - Support Markup, Html/Xml, Svg, MathML, Http, Php
-  - Support C, C++, C#, Git, Java, Json, Markdown, Nginx, PowerShell, Python, Stylus, Yaml
+  - Support Markup, Html/Xml, Svg, MathML, Http, Php, C, C++, C#, Git, Java, Json, Markdown, Nginx, PowerShell, Python, Stylus, Yaml
+  - Use `prism.js` and doesn't use the built-in code hightlight theme for the better experience.
 - Google Chrome navigation bar theme colour
 
 #### Todo
 > People who have dreams & goals are very happy.
 - [x] New style of the homepage
-- [ ] Better homepage & posts interface
+- [x] Better homepage & posts interface
 - [ ] Administrator management module
 - [ ] Support [Vssue](https://vssue.js.org) comment system
 - [ ] Better definiation page
 
 #### License
-This open source project has standing under MIT license.
+**This open source project has standing under MIT license.**
