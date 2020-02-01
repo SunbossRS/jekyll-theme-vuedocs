@@ -17,7 +17,7 @@ author:
   description: 'I am a student.'
 
 ## The base of the site (P.S. must add '/' at last)
-baseurl: 'jekyll-theme-vuedocs'
+baseurl: '/jekyll-theme-vuedocs'
 
 ## Navigation bar list
 nav:

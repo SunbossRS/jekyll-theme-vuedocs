@@ -8,9 +8,9 @@
   <meta name="msapplication-TileColor" content="#34c88a">
   <!-- Quote & import files-->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <!--Mainstyle--><link rel="stylesheet" href="{{ '/css/mainstyl.css' {% if site.baseurl %}| prepend: /site.baseurl{% endif %} }}">
-  <!--Auxiliary--><link rel="stylesheet" href="/{{ '/css/a1c4b631.css' {% if site.baseurl %}| prepend: /site.baseurl{% endif %} }}">
+  <!--Mainstyle--><link rel="stylesheet" href="{{ '/css/mainstyl.css' | prepend: site.baseurl }}">
+  <!--Auxiliary--><link rel="stylesheet" href="{{ '/css/a1c4b631.css' | prepend: site.baseurl }}">
   <!--Vssue><link rel="stylesheet" href="./lib/css/3599a0e2.css"-->
-  <script src="/{{ '/js/jekyllsimsearch.js' {% if site.baseurl %}| prepend: /site.baseurl{% endif %} }}"></script>
-  <script src="/{{ '/js/jquery.3-4-1.min.js.js' {% if site.baseurl %}| prepend: /site.baseurl{% endif %} }}"></script>
+  <script src="{{ '/js/jekyllsimsearch.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/js/jquery.3-4-1.min.js.js' | prepend: site.baseurl }}"></script>
 </head>
