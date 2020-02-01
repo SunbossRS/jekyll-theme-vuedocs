@@ -5,7 +5,7 @@ title: 'Vuekyll'
 description: 'A Vue theme of Jekyll blog.'
 
 ## The url of this site
-url: 'https://sunbossrs.github.io/jekyll-theme-vuekyll'
+url: 'https://sunbossrs.github.io/jekyll-theme-vuedocs'
 
 ## The header image of homepage.
 heroImage: ''
@@ -17,7 +17,7 @@ author:
   description: 'I am a student.'
 
 ## The base of the site (P.S. must add '/' at last)
-baseurl: 'jekyll-theme-vuekyll'
+baseurl: 'jekyll-theme-vuedocs'
 
 ## Navigation bar list
 nav:
