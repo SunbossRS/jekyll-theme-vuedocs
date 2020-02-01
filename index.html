@@ -4,22 +4,23 @@ layout: default
 
 <main aria-labelledby="main-title" class="home">
 <div class="sidebar-mask"></div>
- <aside class="sidebar right-bio bio-sidebar"><!---->
-  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>{{ site.author.name }}</span> <!----></p> </section> </li> </ul> </aside>
-  <header class="hero">
-    <div id="header_section">
+   <aside class="sidebar right-bio bio-sidebar">
+     <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>{{ site.author.name }}</span></p></section></li></ul>
+   </aside>
+   <header class="hero">
+     <div id="header_section">
       <img src="{{ '/img/readme_img.png' | prepend: site.baseurl }}" alt="hero">
       <h1>{{ site.title }}</h1> <p class="description">{{ site.description }}</p>
     </div>
-  </header>
-  <div class="features">
-  {% for post in paginator.posts %}
-    <div class="feature animation">
-      <a href="{{ post.url | relative_url }}">
-        <h2>{{ post.title }}</h2>
-        <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 30 }}</p>
-        <img width="12" src="{{ '/img/date.svg' | relative_url }}"><p color="#ADADA">{{ post.date | remove: "+0000" | remove: "00:00:00" }}</p>
-      </a>
+   </header>
+   <div class="features">
+   {% for post in paginator.posts %}
+     <div class="feature animation">
+       <a href="{{ post.url | relative_url }}">
+         <h2>{{ post.title }}</h2>
+           <p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 30 }}</p>
+           <img width="12" src="{{ '/img/date.svg' | relative_url }}"><p color="#ADADA">{{ post.date | remove: "+0000" | remove: "00:00:00" }}</p>
+       </a>
     </div>
   {% endfor %}
   </div>
