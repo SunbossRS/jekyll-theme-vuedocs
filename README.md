@@ -1,11 +1,13 @@
 ![Header](/img/readme_img.png)
-## jekyll-theme-vuedocs
+<h1 align=center>jekyll-theme-vuedocs</h1>
+<center>Start your new jekyll!</center>
+
 **This is a good theme, but it is still in beta. Coming soon!**
-> Follow vue.js and start from jekyll now! 
+
 
 #### What is `jekyll-theme-vuedocs`?
-Vuedocs is a new jekyll theme with a nice interface. The interface may looks like the Vuepress official site.  
-Of course, we also add some awesome features, we wish you can love this theme!
+Vuedocs is a new jekyll theme with  nice interfaces. The interfaces may looks like Vuepress-setuped site.  
+And of course, we also add some awesome features, we wish you can love this theme!
 
 #### How to use
 Clone this repository first!
@@ -24,13 +26,12 @@ Welcome you to send pull requests or issues!
 
 #### Stuff in this project
 - [Vue.js](https://vuejs.org/) support
-- [VuePress](https://vuepress.js.org/) original theme styles
 - [Vssue](https://vssue.js.org/) comment system
 - [Prism.js](https://prismjs.com/) code hightlights
 
 #### Features
 - Code highlights
-  - Support Markup, Html/Xml, Svg, MathML, Http, Php, C, C++, C#, Git, Java, Json, Markdown, Nginx, PowerShell, Python, Stylus, Yaml
+  - Support Php, C, Java, Html/Xml and the most useful language.
   - Use `prism.js` and doesn't use the built-in code hightlight theme for the better experience.
 - Google Chrome navigation bar theme colour
 
