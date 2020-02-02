@@ -26,6 +26,10 @@
 
 <script>
   function menuopen() {
-    $('#smalldrop').css('display', 'block');
+    if(!$(this).hasClass('sidebar-open')){
+	  $(this).addClass('sidebar-open');
+	} else {
+	  $(this).removeClass('sidebar-open');
+	}
   }
 </script>
