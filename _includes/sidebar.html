@@ -1,7 +1,11 @@
 <div class="nav-item">
-  <div class="dropdown-wrapper">
-    <ul class="nav-dropdown" style="display:none;">
-      {% for nav in site.nav %}<li class="dropdown-item"><a href="{{ nav[1] }}" class="nav-link router-link-exact-active router-link-active">{{ nav[0] }}</a></li>{% endfor %}
-    </ul>
-  </div>
+     <div class="dropdown-wrapper">
+           <ul class="nav-dropdown">
+               {% for nav in site.nav %}
+			   <li class="dropdown-item">
+			      <a href="{{ nav[1] }}" class="nav-link router-link-exact-active router-link-active">{{ nav[0] }}</a>
+			   </li>
+			   {% endfor %}
+           </ul>
+     </div>
 </div>
