@@ -1,10 +1,12 @@
 <header class="navbar">
 
   <a class="dropdown-title">
-     <div class="sidebar-button" onclick="menuopen();" style="align:center">
+     <div class="sidebar-button" onclick="mno();" style="align:center">
     	 <svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class=""></path></svg>
 	 </div>
   </a>
+  
+  <script>function mno() { if(!$('#sidctrl').hasClass('sidebar-open')){ $('#sidctrl').addClass('sidebar-open'); } else { $('#sidctrl').removeClass('sidebar-open'); } };</script>
   
   <a href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active">
      <span class="site-name">{{ site.title }}</span>
@@ -23,13 +25,3 @@
   </div>
   
 </header>
-
-<script>
-  function menuopen() {
-    if(!$('#sidctrl').hasClass('sidebar-open')){
-	  $('#sidctrl').addClass('sidebar-open');
-	} else {
-	  $('#sidctrl').removeClass('sidebar-open');
-	}
-  };
-</script>
