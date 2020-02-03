@@ -18,11 +18,17 @@
 		 <ul id="resultbox" class="suggestions align-right"></ul>
 		 <script>
 		   function resc() {
-		     $('#searchbox').focus(function () {
-			   $('#resultbox').style('display', 'block');})
-			 }$('#searchbox').blur(function () {
-			   $('#resultbox').style('display', 'none');})
-			   }
+		     $('#searchbox').focus(
+			   function () {
+			     $('#resultbox').style('display', 'block');
+			   };
+			 );
+			 $('#searchbox').blur(
+			   function () {
+			     $('#resultbox').style('display', 'none');
+			   };
+			 );
+		 <script>
 		 <script>
            SimpleJekyllSearch({
               searchInput: document.getElementById('searchbox'),
