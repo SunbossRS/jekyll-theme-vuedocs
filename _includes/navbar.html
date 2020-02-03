@@ -8,14 +8,9 @@
   
   <script>function side() { if(!$('#sidctrl').hasClass('sidebar-open')){ $('#sidctrl').addClass('sidebar-open'); } else { $('#sidctrl').removeClass('sidebar-open'); } };</script>
   
-  <div href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active">
+  <a href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active">
      <span class="site-name">{{ site.title }}</span>
-     {% for nav in site.nav %}
-	   <li class="dropdown-item">
-		  <span href="{{ nav[1] | append: site.baseurl }}" class="home-link router-link-exact-active router-link-active">{{ nav[0] }}</span>
-	   </li>
-     {% endfor %}
-  </div>
+  </a>
   
   <div class="links">
      <div class="search-box">
