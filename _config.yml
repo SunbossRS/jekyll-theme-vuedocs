@@ -27,7 +27,7 @@ nav:
   'Friends': '/friends'
 
 ## Site comment system option (option: vssue, gitalk, disqus, valine, utterances, livere)
-comment: utterances
+comment: vssue
 
 ## Enable or disable comment system (option: true / false)
 usecomment: true
