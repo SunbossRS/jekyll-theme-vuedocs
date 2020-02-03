@@ -2,12 +2,10 @@
 layout: default
 ---
 
-<main aria-labelledby="main-title" class="home">
-  <img src="{{ page.img }}">
-  <h1>{{ page.title }}</h1>
-  <div><img src="{{ '/img/author.svg' | prepend: site.baseurl }}" width="16"><p class="description">{{ site.author.name }}</p> <img src="{{ '/img/date.svg' | prepend: site.baseurl }}" width="16"><p>{{ post.date | remove: "+0000" | remove: "00:00:00" }}</p> </div>
-  <p>{{ content }}<p>
-  {% if site.usecomment == true %}
-      {% include comment.html %}
-  {% endif %}
-</main>
+<img src="{{ page.img }}">
+<h1>{{ page.title }}</h1>
+<div class="global-ui"><img src="{{ '/img/author.svg' | prepend: site.baseurl }}" width="16"><p class="description">{{ site.author.name }}</p> <img src="{{ '/img/date.svg' | prepend: site.baseurl }}" width="16"><p>{{ post.date | remove: "+0000" | remove: "00:00:00" }}</p> </div>
+<p>{{ content }}<p>
+{% if site.usecomment == true %}
+   {% include comment.html %}
+{% endif %}
