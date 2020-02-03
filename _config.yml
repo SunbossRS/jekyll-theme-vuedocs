@@ -1,14 +1,14 @@
 ## Site title
-title: 'Vuekyll'
+title: 'Vuedocs'
 
 ## Site description
-description: 'A Vue theme of Jekyll blog.'
+description: 'Vue theme for jekyll.'
 
 ## The url of this site
 url: 'https://sunbossrs.github.io/jekyll-theme-vuedocs'
 
 ## The header image of homepage.
-heroImage: ''
+heroImage: 'img/heroImage.jpg'
 
 ## Site author settings
 author:
@@ -16,7 +16,7 @@ author:
   avatar: '/img/avatar.png'
   description: 'I am a student.'
 
-## The base of the site (P.S. must add '/' at last)
+## The base of the site (MUST ADD '/' BEFORE PATHNAME)
 baseurl: '/jekyll-theme-vuedocs'
 
 ## Navigation bar list
@@ -26,28 +26,31 @@ nav:
   About: '/about'
   Friends: '/friends'
 
-## Site comment system option (option: vssue, gitalk, disqus, valine)
+## Site comment system option (option: vssue, gitalk, disqus, valine, utterances, livere)
 comment: vssue
 
 ## Infos for comment system
-vssue_platform: github # (option: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
-comment_info:
-  clientid: '' 
-  clientsecret: '' # (if not requred, keep blank)
+vssue_platform: 'github' # (option: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
+comment_info: # (something if not required, just keep blank)
+  clientid: ''
+  clientsecret: '' #vssue_if_not_required_just_keep_blank
   repo: ''
   owner: ''
-  disqus_shortname: '' # (keep blank if u r not using disqus)
-  appid: '' # (keep blank if u r not using valine)
-  appkey: '' # (keep blank if u r not using valine)
-  valine_placeholder: '' # (keep blank if u r not using valine)
+  disqus_shortname: '' #disqus
+  appid: '' #valine
+  appkey: '' #valine
+  valine_placeholder: '' #valine
+  utterances_theme: 'github-light' # (option: github-light, github-black, github-dark-orange, icy-dark, dark-blue, photon-dark)
+  utterances_repo: 'SunbossRS/jekyll-theme-vuedocs' # as GithubUsername/repo
+  utterances_issue_term: 'title' # (option: pathname, url, title, og:title)
 
 ## Manager panel
 manager:
-  use: '' # true / false
-  edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' # Your open-source platform repo url + /edit/master/
+  use: '' # option: true / false
+  edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' #your_opensource_platform_repository_url_in_the_branch_and_edit_mode. / REMEMBER TO ADD '/' AT LAST
 
 ## Show how many posts per page
-paginate: 3
+paginate: 5
 
 ## The paginate path location
 paginate_path: "/page:num/"

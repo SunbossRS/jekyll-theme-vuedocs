@@ -5,7 +5,7 @@
 <div id="comment"></div>
 
 {% if site.comment == "vssue" %}
-<link rel="stylesheet" href="{{ "/lib/css/3599a0e2.css" | prepend: site.baseurl}}">
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
 <script src="https://unpkg.com/vssue/dist/vssue.{{ site.vssue_platform }}.min.js"></script>
 <script>
   new Vue({
@@ -68,5 +68,15 @@
       appKey: '{{ info.appkey }}',
       placeholder: '{{ info.valine_placeholder }}'
   })
+</script>
+{% endif %}
+
+{% if site.comment == "utterances" %}
+<script src="https://utteranc.es/client.js"
+        repo="{{ info.repo }}"
+        issue-term="{{ page.url }}"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
 {% endif %}
