@@ -15,13 +15,19 @@
   <div class="links">
      <div class="search-box">
 	     <input onclick="resc();" aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul id="resultbox" class="suggestions align-right" style="height:0px;"></ul>
+		 <ul id="resultbox" class="suggestions align-right"></ul>
+		 <script>
+		   function resc() {
+		     $("#searchbox").focus($('ul').find('#resultbox').show();)
+		     $("#searchbox").blur($('ul').find('#resultbox').hide(););
+			}
+	     </script>
 		 <script>
            SimpleJekyllSearch({
               searchInput: document.getElementById('searchbox'),
               resultsContainer: document.getElementById('resultbox'),
               json: '{{ site.baseurl }}/search.json',
-              searchResultTemplate: '<div class="nav-item"><li><a href="{url}" class="nav-link">{title}</a></li></div>'
+              searchResultTemplate: '<li><a href="{url}" class="sidebar-heading nav-item nav-link">{title}</a></li>'
             })
          </script>
 	 </div>
