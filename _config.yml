@@ -21,13 +21,16 @@ baseurl: '/jekyll-theme-vuedocs'
 
 ## Navigation bar list
 nav:
-  Home: '/'
-  Tags: '/tags'
-  About: '/about'
-  Friends: '/friends'
+  'Home': '/'
+  'Tags': '/tags'
+  'About': '/about'
+  'Friends': '/friends'
 
 ## Site comment system option (option: vssue, gitalk, disqus, valine, utterances, livere)
 comment: vssue
+
+## Enable or disable comment system (option: true / false)
+usecomment: true
 
 ## Infos for comment system
 vssue_platform: 'github' # (option: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
