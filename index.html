@@ -2,23 +2,7 @@
 layout: default
 ---
 
-<main aria-labelledby="main-title" class="home">
-   <div class="sidebar-mask"></div>
-   <aside class="sidebar">
-      <ul class="sidebar-links">
-	      <li>
-		      <section class="sidebar-group depth-0">
-			      <img src="{{ site.author.avatar }}" width="30%" style="border-radius: 50%; overflow:hidden;">
-			      <p class="sidebar-heading open"><span>{{ site.author.name }}</span></p>
-				  {% for nav in site.nav %}
-	                  <li class="nav-item">
-		                  <a href="{{ nav[1] | prepend: site.baseurl }}" class="sidebar-heading open">{{ nav[0] }}</a>
-	                  </li>
-                  {% endfor %}
-			  </section>
-		  </li>
-	  </ul>
-  </aside>
+<div class="sidebar-mask"></div>
    <header class="hero">
      <div id="header_section">
       <img src="{{ site.heroImage }}" alt="hero">
