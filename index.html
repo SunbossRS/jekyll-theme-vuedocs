@@ -8,10 +8,11 @@ layout: default
       <ul class="sidebar-links">
 	      <li>
 		      <section class="sidebar-group depth-0">
+			      <img src="{{ site.author.avatar }}">
 			      <p class="sidebar-heading open"><span>{{ site.author.name }}</span></p>
 				  {% for nav in site.nav %}
 	                  <li class="dropdown-item">
-		                  <span href="{{ nav[1] | append: site.baseurl }}" class="sidebar-heading open">{{ nav[0] }}</span>
+		                  <span href="{{ nav[1] | append: site.baseurl }}" class="nav-link open">{{ nav[0] }}</span>
 	                  </li>
                   {% endfor %}
 			  </section>
