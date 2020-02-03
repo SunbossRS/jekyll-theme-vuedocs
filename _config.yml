@@ -13,7 +13,7 @@ heroImage: 'img/heroImage.jpg'
 ## Site author settings
 author:
   name: 'Vue'
-  avatar: '/img/avatar.png'
+  avatar: '/jekyll-theme-vuedocs/img/avatar.png'
   description: 'I am a student.'
 
 ## The base of the site (MUST ADD '/' BEFORE PATHNAME)
