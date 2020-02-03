@@ -14,13 +14,13 @@
   
   <div class="links">
      <div class="search-box">
-	     <input onclick="resc();" aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
+	     <input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
 		 <ul id="resultbox" class="suggestions align-right"></ul>
 		 <script>
-		   function resc() {
-		     $("#searchbox").focus($('ul').find('#resultbox').show();)
-		     $("#searchbox").blur($('ul').find('#resultbox').hide(););
-			}
+		   $(document).ready(function(){
+		     $("#searchbox").focus(function($('ul').find('#resultbox').show();));
+		     $("#searchbox").blur(function($('ul').find('#resultbox').hide();));
+			});
 	     </script>
 		 <script>
            SimpleJekyllSearch({
