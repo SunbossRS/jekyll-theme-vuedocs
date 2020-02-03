@@ -15,17 +15,7 @@
   <div class="links">
      <div class="search-box">
 	     <input onclick="resc();" aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul id="resultbox" class="suggestions align-right" style="display: none;"></ul>
-		 <script>
-		   function resc() {
-		     $('#searchbox').focus(
-			   $('#resultbox').style('display', 'block');
-			 );
-			 $('#searchbox').blur(
-			   $('#resultbox').style('display', 'none');
-			 );
-		   };
-		 </script>
+		 <ul id="resultbox" class="suggestions align-right" style="height:0px;"></ul>
 		 <script>
            SimpleJekyllSearch({
               searchInput: document.getElementById('searchbox'),
