@@ -15,7 +15,7 @@
   <div class="links">
      <div class="search-box">
 	     <input onclick="resc();" aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul id="resultbox" class="suggestions align-right"></ul>
+		 <ul id="resultbox" class="suggestions align-right" style="display: none;"></ul>
 		 <script>
 		   function resc() {
 		     $('#searchbox').focus(
@@ -34,7 +34,7 @@
               searchInput: document.getElementById('searchbox'),
               resultsContainer: document.getElementById('resultbox'),
               json: '{{ site.baseurl }}/search.json',
-              searchResultTemplate: '<div class="nav-item"><li><a href="{{ site.url }}{url}" class="nav-link">{title}</a></li></div>'
+              searchResultTemplate: '<div class="nav-item"><li><a href="{url}" class="nav-link">{title}</a></li></div>'
             })
          </script>
 	 </div>
