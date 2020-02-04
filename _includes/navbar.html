@@ -13,9 +13,18 @@
   <div class="links">
      <div class="search-box">
 	     <input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul id="resultbox" class="suggestions align-right" style="position:absolute"></ul>
+		 <ul id="resultbox" class="suggestions align-right"></ul>
 	 </div>
 	 
+	 <script>
+	 SimpleJekyllSearch({
+		searchInput: document.getElementById('searchbox'),
+		resultsContainer: document.getElementById('resultbox'),
+		json: '{{ site.baseurl }}/search.json',
+		searchResultTemplate: '<li><a href="{url}" class="sidebar-heading nav-item nav-link">{title}</a></li>'
+	  });
+	  </script>
+	  
      <nav class="nav-links can-hide">
 	     {% for nav in site.nav %}
 		 <div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>

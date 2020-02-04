@@ -15,14 +15,6 @@ if ($('#sideaside').blur) {
 	$('#sideaside').removeClass('sidebar-open');
 };
 
-// Website search framework
-SimpleJekyllSearch({
-	searchInput: document.getElementById('searchbox'),
-    resultsContainer: document.getElementById('resultbox'),
-    json: '{{ site.baseurl }}/search.json',
-    searchResultTemplate: '<li><a href="{url}" class="sidebar-heading nav-item nav-link">{title}</a></li>'
-});
-
 // Run a probe object resultbox show & hide on website
 if ($("#searchbox").focus) {
 	$('#resultbox').show();
