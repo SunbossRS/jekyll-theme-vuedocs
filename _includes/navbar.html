@@ -13,7 +13,7 @@
   <div class="links">
      <div class="search-box">
 	     <input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul id="resultbox" class="suggestions align-right"></ul>
+		 <ul v-if="showSuggestions" id="resultbox" class="suggestions align-right"></ul>
 	 </div>
 	 
 	 <script>
@@ -21,7 +21,7 @@
 		searchInput: document.getElementById('searchbox'),
 		resultsContainer: document.getElementById('resultbox'),
 		json: '{{ site.baseurl }}/search.json',
-		searchResultTemplate: '<li><a href="{url}" class="sidebar-heading nav-item nav-link">{title}</a></li>'
+		searchResultTemplate: '<li><a href="{url}"><span class="suggestion page-title sidebar-heading nav-item nav-link">{title}</span></a></li>'
 	  });
 	  </script>
 	  
