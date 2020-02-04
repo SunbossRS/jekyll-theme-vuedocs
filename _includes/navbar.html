@@ -6,8 +6,6 @@
 	 </div>
   </a>
   
-  <script>function side() { if(!$('#sidctrl').hasClass('sidebar-open')){ $('#sidctrl').addClass('sidebar-open'); } else { $('#sidctrl').removeClass('sidebar-open'); } };</script>
-  
   <a href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active">
      <span class="site-name">{{ site.title }}</span>
   </a>
@@ -16,20 +14,6 @@
      <div class="search-box">
 	     <input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
 		 <ul id="resultbox" class="suggestions align-right"></ul>
-		 <script>
-		   $(document).ready(function(){
-		     $("#searchbox").focus(function($('#resultbox').show();));
-		     $("#searchbox").blur(function($('#resultbox').hide();));
-			});
-	     </script>
-		 <script>
-           SimpleJekyllSearch({
-              searchInput: document.getElementById('searchbox'),
-              resultsContainer: document.getElementById('resultbox'),
-              json: '{{ site.baseurl }}/search.json',
-              searchResultTemplate: '<li><a href="{url}" class="sidebar-heading nav-item nav-link">{title}</a></li>'
-            })
-         </script>
 	 </div>
 	 
      <nav class="nav-links can-hide">
