@@ -11,12 +11,9 @@ function side() {
 };
 
 // Run a probe object website mobile device sidebar new feature
-window.onload = function()
-	{
-		if ($('aside .sidebar').blur) {
-			$('#sidctrl').removeClass('sidebar-open');
-		}
-	}
+if ($('#sideaside').blur) {
+	$('#sideaside').removeClass('sidebar-open');
+};
 
 // Website search framework
 SimpleJekyllSearch({
@@ -24,15 +21,12 @@ SimpleJekyllSearch({
     resultsContainer: document.getElementById('resultbox'),
     json: '{{ site.baseurl }}/search.json',
     searchResultTemplate: '<li><a href="{url}" class="sidebar-heading nav-item nav-link">{title}</a></li>'
-})
+});
 
 // Run a probe object resultbox show & hide on website
-window.onload = function()
-	{
-		if ($("#searchbox").focus) {
-			$('#resultbox').show();
-		};
-		if ($("#searchbox").blur) {
-				$('#resultbox').hide();
-		};
-	}
+if ($("#searchbox").focus) {
+	$('#resultbox').show();
+};
+if ($("#searchbox").blur) {
+	$('#resultbox').hide();
+};
