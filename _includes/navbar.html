@@ -13,7 +13,7 @@
   <div class="links">
      <div class="search-box">
 	     <input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul v-if="showSuggestions" id="resultbox" class="suggestions align-right"></ul>
+		 <ul v-if="showSuggestions" id="resultbox" class="suggestions align-right" style="display:none;"></ul>
 	 </div>
 	 
 	 <script>
@@ -29,7 +29,10 @@
 	  $(function () {
         $('#searchbox').on('click', function () {
             $('#resultbox').css('display', 'block')
-        })
+        });
+		$('#searchbox').blur(function () {
+		    $('#resultbox').css('display', 'none')
+	    });
      })
 	</script>
 	  
