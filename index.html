@@ -11,7 +11,7 @@ layout: default
 	</header>
 	<div class="features">
 	{% for post in paginator.posts %}
-		<div class="feature">
+		<div class="framepost">
 			<a href="{{ post.url | relative_url }}">
 				<h2>{{ post.title }}</h2>
 				<p class="description">{{ post.excerpt | strip_html | strip_newlines | truncate: 70 }}</p>
