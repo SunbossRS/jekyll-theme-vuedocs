@@ -10,6 +10,9 @@ layout: default
 <hr>
 <div class="markdown-body">
 	{{ content }}
+	{% if site.cclicense != "" %}
+		{% include cclicense.html %}
+	{% endif %}
 </div>
 {% if site.usecomment == true %}
 	{% include comment.html %}
