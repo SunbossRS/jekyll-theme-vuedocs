@@ -26,14 +26,17 @@ nav:
   'About': '/about'
   'Friends': '/friends'
 
-## Site comment system option (option: vssue, gitalk, disqus, valine, utterances, livere)
+## Use post article Creative Common article
+cclicense: 'by-nc-nd' # (options: by, by-sa, by-nd, by-nc, by-nc-sa, by-nc-nd)
+
+## Site comment system option (options: vssue, gitalk, disqus, valine, utterances, livere)
 comment: vssue
 
-## Enable or disable comment system (option: true / false)
+## Enable or disable comment system (options: true / false)
 usecomment: true
 
 ## Infos for comment system
-vssue_platform: 'github' # (option: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
+vssue_platform: 'github' # (options: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
 comment_info: # (something if not required, just keep blank)
   clientid: ''
   clientsecret: '' #vssue_if_not_required_just_keep_blank
@@ -43,14 +46,14 @@ comment_info: # (something if not required, just keep blank)
   appid: '' #valine
   appkey: '' #valine
   valine_placeholder: '' #valine
-  utterances_theme: 'github-light' # (option: github-light, github-black, github-dark-orange, icy-dark, dark-blue, photon-dark)
-  utterances_repo: 'SunbossRS/jekyll-theme-vuedocs' # as GithubUsername/repo
-  utterances_issue_term: 'title' # (option: pathname, url, title, og:title)
+  utterances_theme: 'github-light' # (options: github-light, github-black, github-dark-orange, icy-dark, dark-blue, photon-dark)
+  utterances_repo: '' # as GithubUsername/repo
+  utterances_issue_term: '' # (options: pathname, url, title, og:title)
 
 ## Manager panel
 manager:
-  use: '' # option: true / false
-  edit_repo_url: 'https://github.com/sunbossrs/jekyll-theme-vuekyll/edit/master/' #your_opensource_platform_repository_url_in_the_branch_and_edit_mode. / REMEMBER TO ADD '/' AT LAST
+  use: '' # options: true / false
+  edit_repo_url: 'https://github.com/xxx/xxx.github.io/edit/master/' # your_opensource_platform_repository_url_in_the_branch_and_edit_mode. / REMEMBER TO ADD '/' AT LAST
 
 ## Show how many posts per page
 paginate: 5
