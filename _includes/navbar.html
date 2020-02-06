@@ -48,7 +48,7 @@
 	  
 		<nav class="nav-links can-hide">
 		{% for nav in site.nav %}
-			<div class="nav-item"><a href="{{ nav[1] | prepend: site.baseurl }}" class="nav-link">{{ nav[0] | prepend:site.baseurl }}</a></div>
+			<div class="nav-item"><a href="{{ nav[1] | prepend: site.baseurl }}" class="nav-link">{{ nav[0] }}</a></div>
 		{% endfor %}
 		</nav>
 	</div>

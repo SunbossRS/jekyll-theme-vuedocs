@@ -1,16 +1,17 @@
+<!--MobileSidebar-->
 <aside class="sidebar" id="sideaside">
-      <ul class="sidebar-links">
-	      <li>
-		      <section class="sidebar-group depth-0">
-			      <img src="{{ site.author.avatar }}" width="30%" style="border-radius: 50%; overflow:hidden;">
-			      <p class="sidebar-heading open"><span>{{ site.author.name }}</span></p>
-				  <hr>
-				  {% for nav in site.nav %}
-	                  <li class="nav-item">
-		                  <a href="{{ nav[1] | prepend: site.baseurl }}" class="sidebar-heading open">{{ nav[0] }}</a>
-	                  </li>
-                  {% endfor %}
-			  </section>
-		  </li>
-	  </ul>
+	<ul class="sidebar-links">
+		<li>
+			<section class="sidebar-group depth-0">
+				<img src="{{ site.author.avatar }}" width="30%" style="border-radius: 50%; overflow:hidden;">
+				<p class="sidebar-heading open"><span>{{ site.author.name }}</span></p>
+				<hr>
+				{% for nav in site.nav %}
+					<li class="nav-item">
+						<a href="{{ nav[1] | prepend: site.baseurl }}" class="sidebar-heading open">{{ nav[0] }}</a>
+					</li>
+				{% endfor %}
+			</section>
+		</li>
+	</ul>
 </aside>
