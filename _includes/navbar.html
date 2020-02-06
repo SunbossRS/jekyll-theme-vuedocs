@@ -1,46 +1,56 @@
 <header class="navbar">
 
-  <a class="dropdown-title">
-     <div class="sidebar-button" onclick="side();" style="align:center">
-    	 <svg class="icon" style="color: black;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class=""></path></svg>
-	 </div>
-  </a>
+	<a class="dropdown-title">
+		<div class="sidebar-button" onclick="side();" style="align:center">
+			<svg class="icon" style="color: black;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class=""></path></svg>
+		</div>
+	</a>
   
-  <a href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active">
-     <span class="site-name">{{ site.title }}</span>
-  </a>
+	<a href="{{ site.baseurl }}" class="home-link router-link-exact-active router-link-active">
+		<span class="site-name">{{ site.title }}</span>
+	</a>
   
-  <div class="links">
-     <div class="search-box">
-	     <input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
-		 <ul v-if="showSuggestions" id="resultbox" class="suggestions align-right" style="display:none;"></ul>
-	 </div>
+	<div class="links">
+		<div class="search-box">
+			<input aria-label="Search" id="searchbox" autocomplete="off" id="searchbox" spellcheck="true" value="">
+			<ul v-if="showSuggestions" id="resultbox" class="suggestions align-right" style="display:none;"></ul>
+		</div>
 	 
-	 <script>
-	 SimpleJekyllSearch({
-		searchInput: document.getElementById('searchbox'),
-		resultsContainer: document.getElementById('resultbox'),
-		json: '{{ site.baseurl }}/search.json',
-		searchResultTemplate: '<li><a href="{url}"><span class="suggestion page-title sidebar-heading nav-item nav-link">{title}</span></a></li>'
-	  });
-	  </script>
+		<script>
+		SimpleJekyllSearch({
+			searchInput: document.getElementById('searchbox'),
+			resultsContainer: document.getElementById('resultbox'),
+			json: '{{ site.baseurl }}/search.json',
+			searchResultTemplate: '<li><a href="{url}"><span class="suggestion page-title sidebar-heading nav-item nav-link">{title}</span></a></li>'
+		});
+		</script>
 	  
-	  <script>
-	  $(function () {
-        $('#searchbox').on('click', function () {
-            $('#resultbox').css('display', 'block')
-        });
-		$('#searchbox').blur(function () {
-		    $('#resultbox').css('display', 'none')
-	    });
-     })
-	</script>
+		<script>
+		$(function () {
+			$('#searchbox').on('click', function () {
+				$('#resultbox').css('display', 'block')
+			});
+			$('#searchbox').blur(function () {
+				$('#resultbox').css('display', 'none')
+			});
+		})
+		</script>
+	
+		<script>
+		function side() {
+			if(!$('#sidctrl').hasClass('sidebar-open')){
+				$('#sidctrl').addClass('sidebar-open');
+			} else {
+			$('#sidctrl').removeClass('sidebar-open');
+			}
+		};
+		</script>
 	  
-     <nav class="nav-links can-hide">
-	     {% for nav in site.nav %}
-		 <div class="nav-item"><a href="{{ nav[1] }}" class="nav-link">{{ nav[0] }}</a></div>
-		 {% endfor %}
-	 </nav>
-  </div>
+		<nav class="nav-links can-hide">
+		{% for nav in site.nav %}
+			<div class="nav-item"><a href="{{ nav[1] | prepend: site.baseurl }}" class="nav-link">{{ nav[0] | prepend:site.baseurl }}</a></div>
+		{% endfor %}
+		</nav>
+	</div>
   
 </header>

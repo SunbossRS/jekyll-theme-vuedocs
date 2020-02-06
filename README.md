@@ -1,13 +1,13 @@
-![Header](/img/readme_img.png)
+![Header](./img/readme_img.png)
 <h1 align=center>jekyll-theme-vuedocs</h1>
-<center>Start your new jekyll!</center>
+<p align=center>Start your new jekyll!</center>
 
 **This is a good theme, but it is still in beta. Coming soon!**
 
 
 #### What is `jekyll-theme-vuedocs`?
 Vuedocs is a new jekyll theme with  nice interfaces. The interfaces may looks like Vuepress-setuped site.  
-And of course, we also add some awesome features, we wish you can love this theme!
+And of course, we also add some awesome features, we wish you will love this theme!
 
 #### How to use
 Clone this repository first!
@@ -22,26 +22,33 @@ jekyll serve
 
 #### Contribution
 Thanks for everyone to support this theme!  
-Welcome you to send pull requests or issues!
+Welcome you to send pull requests or issues, for the theme's better!
 
-#### Stuff in this project
+#### Using things in this project
 - [Vue.js](https://vuejs.org/) support
-- [Vssue](https://vssue.js.org/) comment system
 - [Prism.js](https://prismjs.com/) code hightlights
+- [jQuery.js](https://jquery.com/) support
+- [SimpleJekyllSearch](https://github.com/christian-fei/simple-jekyll-search) searching service
+- Comment system (quote)
+  - [vssue](https://github.com/metrolxy/vssue/)
+  - [gitalk](https://github.com/gitalk/)
+  - [disqus](https://disqus.com/)
+  - [valine](https://github.com/xcss/valine/)
+  - [utterances](https://github.com/utterance/)
 
 #### Features
 - Code highlights
-  - Support Php, C, Java, Html/Xml and the most useful language.
-  - Use `prism.js` and doesn't use the built-in code hightlight theme for the better experience.
-- Google Chrome navigation bar theme colour
+  - Support Php, C(like), Java, Html/Xml and the most useful language.
+  - Use `prism.js`.
+- Google Chrome navigation bar theme colour.
+- Setup many comment system for your choose.
+- *(Still in beta)* Manager panel platform.
+- Support definiation page, and it is easy to write a definiation page, too.
 
 #### Todo
-> People who have dreams & goals are very happy.
-- [x] New style of the homepage
-- [x] Better homepage & posts interface
+- [ ] New style of the homepage
 - [ ] Administrator management module
-- [ ] Support [Vssue](https://vssue.js.org) comment system
-- [ ] Better definiation page
+- [x] Better definiation page
 
 #### License
 **This open source project has standing under MIT license.**
