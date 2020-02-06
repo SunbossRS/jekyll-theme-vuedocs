@@ -45,6 +45,14 @@
 			}
 		};
 		</script>
+		
+		<script>
+		$(function () {
+			$('#sidaside').blur(function () {
+				$('#sidctrl').removeClass('sidebar-open')
+			});
+		})
+		</script>
 	  
 		<nav class="nav-links can-hide">
 		{% for nav in site.nav %}
