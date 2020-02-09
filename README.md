@@ -10,12 +10,9 @@ Vuedocs is a new jekyll theme with  nice interfaces. The interfaces may looks li
 And of course, we also add some awesome features, we wish you will love this theme!
 
 #### How to use
-Clone this repository first!
+Clone this repository first and run this repository on your host!
 ```bash
 git clone https://Github.com/SunbossRS/jekyll-theme-vuedocs.git
-```
-Run this repository via your jekyll host!
-```
 jekyll serve
 ```
 ... Doesn't know how to run Jekyll on your computer? [Click here](https://jekyllrb.com/) for help.
@@ -42,13 +39,17 @@ Welcome you to send pull requests or issues, for the theme's better!
   - Use `prism.js`.
 - Google Chrome navigation bar theme colour.
 - Setup many comment system for your choose.
-- *(Still in beta)* Manager panel platform.
+- *(Beta)* Manager panel platform.
 - Support definiation page, and it is easy to write a definiation page, too.
+
+#### About comment system
+The comment system are all need to configure some external stuffs. The [`vssue`](https://vssue.js.org/), [`gitalk`](https://gitalk.github.io/) requires you to [create a OAuth Application](https://github.com/settings/applications/new) for comment, and go to `_config.yml` to input some information. But the [`utterances`](https://utteranc.es/) just only needs needs to [install a application](https://github.com/apps/utterances/) and then use it.  
+The [`disqus`](https://disqus.com/) is the most famous comment system in blog. It is also good. But [`disqus`](https://disqus.com/) will be unusable in some country ...  
+[`Valine`](https://valine.js.org) is so free in account username and it support emoji. But it needs to [create a application in LeanCloud](https://leancloud.cn/dashboard/applist.html#/newapp).
 
 #### Todo
 - [ ] New style of the homepage
 - [ ] Administrator management module
-- [x] Better definiation page
 
 #### License
 **This open source project has standing under MIT license.**
