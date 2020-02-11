@@ -27,7 +27,7 @@ nav:
   'Friends': '/friends'
 
 ## Use post article Creative Common article (options: by, by-sa, by-nd, by-nc, by-nc-sa, by-nc-nd)
-cclicense: "by-nc-nd"
+#cclicense: "by-nc-nd"
 
 ## Enable or disable comment system (options: true / false)
 usecomment: true
