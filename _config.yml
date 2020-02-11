@@ -1,5 +1,5 @@
 ## Site title
-title: 'Vuedocs'
+title: "Vuedocs"
 
 ## Site description
 description: 'Vue theme for jekyll.'
@@ -25,9 +25,6 @@ nav:
   'Tags': '/tags'
   'About': '/about'
   'Friends': '/friends'
-
-## Use post article Creative Common article (options: by, by-sa, by-nd, by-nc, by-nc-sa, by-nc-nd)
-#cclicense: "by-nc-nd"
 
 ## Enable or disable comment system (options: true / false)
 usecomment: true
