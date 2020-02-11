@@ -26,17 +26,17 @@ nav:
   'About': '/about'
   'Friends': '/friends'
 
-## Use post article Creative Common article
-cclicense: 'by-nc-nd' # (options: by, by-sa, by-nd, by-nc, by-nc-sa, by-nc-nd)
+## Use post article Creative Common article (options: by, by-sa, by-nd, by-nc, by-nc-sa, by-nc-nd)
+cclicense: "by-nc-nd"
 
 ## Site comment system option (options: vssue, gitalk, disqus, valine, utterances, livere)
-comment: vssue
+comment: 'vssue'
 
 ## Enable or disable comment system (options: true / false)
 usecomment: true
 
 ## Infos for comment system
-vssue_platform: 'github' # (options: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
+vssue_platform: 'github' (options: github, gitlab, bitbucket, gitee. NO-REQUIRE-CAPITALIZE)
 comment_info: # (something if not required, just keep blank)
   clientid: ''
   clientsecret: '' #vssue_if_not_required_just_keep_blank
