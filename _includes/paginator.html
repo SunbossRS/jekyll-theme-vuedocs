@@ -3,16 +3,16 @@
 	{% if paginator.total_pages >= 1 %}
 		{% if paginator.previous_page %}
 			{% if paginator.previous_page == 1 %}
-				<span class="prev"> < <a href="{{ "/" | prepend: site.baseurl | relative_url }}" class="prev router-link-active" title="Previous"> Prev</a></span>
+				<span class="prev"> ← <a href="{{ '/' | prepend: site.baseurl | relative_url }}" class="prev router-link-active" title="Previous"> Prev</a></span>
 			{% else %}
-				<span class="prev"> < <a href="{{ prepend: '/page' | paginator.previous_page | prepend: site.baseurl | relative_url }}/" class="prev router-link-active" title="Previous"> Prev</a></span>
+				<span class="prev"> ← <a href="{{ prepend: '/page' | paginator.previous_page | prepend: site.baseurl | relative_url }}/" class="prev router-link-active" title="Previous"> Prev</a></span>
 			{% endif %}
 		{% endif %}
 	{% if paginator.next_page %}
 		{% if paginator.next_page == 1 %}
-			<span class="next"><a href="{{ '/page' | append: paginator.next_page | prepend: site.baseurl | relative_url }}" title="Next">Next </a> > </span>
+			<span class="next"><a href="{{ '/page' | append: paginator.next_page | prepend: site.baseurl | relative_url }}" title="Next">Next </a> → </span>
 		{% else %}
-			<span class="next"><a href="{{ '/page' | append: paginator.next_page | prepend: site.baseurl | relative_url }}" title="Next">Next </a> > </span>
+			<span class="next"><a href="{{ '/page' | append: paginator.next_page | prepend: site.baseurl | relative_url }}" title="Next">Next </a> → </span>
 		{% endif %}
 	{% endif %}
 	</p>
