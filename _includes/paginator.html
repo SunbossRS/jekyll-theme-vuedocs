@@ -5,7 +5,7 @@
 			{% if paginator.previous_page == 1 %}
 				<span class="prev"> < <a href="{{ "/" | prepend: site.baseurl | relative_url }}" class="prev router-link-active" title="Previous"> Prev</a></span>
 			{% else %}
-				<span class="prev"> < <a href="{{ prepend: "/page" | paginator.previous_page | prepend: site.baseurl | relative_url }}/" class="prev router-link-active" title="Previous"> Prev</a></span>
+				<span class="prev"> < <a href="{{ prepend: '/page' | paginator.previous_page | prepend: site.baseurl | relative_url }}/" class="prev router-link-active" title="Previous"> Prev</a></span>
 			{% endif %}
 		{% endif %}
 	{% if paginator.next_page %}
